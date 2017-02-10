@@ -15,7 +15,7 @@ namespace doguAkdenizApp
         {
             try
             {
-                string myConnection = "datasource=160.153.129.19;port=3306;username=nuridesengin;password=uiVypENP65";
+                string myConnection = "datasource=root;port=root;username=root;password=root";
     
                 MySqlConnection myConn = new MySqlConnection(myConnection);
 
