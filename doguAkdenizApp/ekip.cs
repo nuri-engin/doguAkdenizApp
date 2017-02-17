@@ -42,7 +42,7 @@ namespace doguAkdenizApp
         {
             string myConnection = "datasource=root;port=root;username=root;password=root";
             MySqlConnection myConn = new MySqlConnection(myConnection);
-            MySqlCommand cmdDataBase = new MySqlCommand("select id as 'ID',name as 'İsim',surname as 'Soyisim',idno as 'TCNo',birth as 'DoğumTarihi',telephone as 'Telefon',email as 'ePosta',city as 'Şehir',adress as 'Adres',title as 'Gorevi', recorddate as 'KayıtTarihi',username as 'Yetkili' from doguAkdenizApp.team;", myConn);
+            MySqlCommand cmdDataBase = new MySqlCommand("select id as 'ID',name as 'Isim',surname as 'Soyisim',idno as 'TCNo',birth as 'DoğumTarihi',telephone as 'Telefon',email as 'ePosta',city as 'Şehir',adress as 'Adres',title as 'Gorevi', recorddate as 'KayıtTarihi',username as 'Yetkili' from doguAkdenizApp.team;", myConn);
             try
             {
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter();

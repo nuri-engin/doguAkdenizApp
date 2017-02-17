@@ -20,4 +20,3 @@ D:\coding\doguAkdenizApp\doguAkdenizApp\doguAkdenizApp\bin\Debug\MySql.Data.xml
 D:\coding\doguAkdenizApp\doguAkdenizApp\doguAkdenizApp\bin\Debug\ExcelLibrary.dll
 D:\coding\doguAkdenizApp\doguAkdenizApp\doguAkdenizApp\obj\Debug\doguAkdenizApp.browser.resources
 D:\coding\doguAkdenizApp\doguAkdenizApp\doguAkdenizApp\obj\Debug\doguAkdenizApp.csproj.ResolveComReference.cache
-D:\coding\doguAkdenizApp\doguAkdenizApp\doguAkdenizApp\obj\Debug\doguAkdenizApp.csprojResolveAssemblyReference.cache

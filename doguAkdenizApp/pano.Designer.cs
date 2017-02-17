@@ -136,6 +136,7 @@
             this.btnPanoProje.TabIndex = 19;
             this.btnPanoProje.Text = "Proje";
             this.btnPanoProje.UseVisualStyleBackColor = false;
+            this.btnPanoProje.Click += new System.EventHandler(this.btnPanoProje_Click);
             // 
             // btnPanoBagis
             // 
@@ -148,6 +149,7 @@
             this.btnPanoBagis.TabIndex = 18;
             this.btnPanoBagis.Text = "Bagış";
             this.btnPanoBagis.UseVisualStyleBackColor = false;
+            this.btnPanoBagis.Click += new System.EventHandler(this.btnPanoBagis_Click);
             // 
             // btnPanoAidat
             // 
@@ -160,6 +162,7 @@
             this.btnPanoAidat.TabIndex = 17;
             this.btnPanoAidat.Text = "Aidat";
             this.btnPanoAidat.UseVisualStyleBackColor = false;
+            this.btnPanoAidat.Click += new System.EventHandler(this.btnPanoAidat_Click);
             // 
             // btnPanoUye
             // 

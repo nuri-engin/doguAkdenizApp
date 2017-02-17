@@ -188,6 +188,7 @@ namespace doguAkdenizApp
                 txtUyeAdres.Text = row.Cells["Adres"].Value.ToString();
                 cbUyeKurulKarari.Text = row.Cells["KurulKarari"].Value.ToString();
                 cbUyeGirisUcreti.Text = row.Cells["GirisUcreti"].Value.ToString();
+                dtpUyeKayitTarihi.Text = row.Cells["KayitTarihi"].Value.ToString();
             }
         }
 

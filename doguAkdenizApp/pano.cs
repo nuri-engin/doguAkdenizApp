@@ -28,6 +28,20 @@ namespace doguAkdenizApp
             uyeEkrani.ShowDialog();
         }
 
+        private void btnPanoAidat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            aidat aidatEkrani = new aidat(lblPanoLogInfo.Text);
+            aidatEkrani.ShowDialog();
+        }
+
+        private void btnPanoBagis_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            bagis bagisEkrani = new bagis(lblPanoLogInfo.Text);
+            bagisEkrani.ShowDialog();
+        }
+
         private void timerPano_Tick(object sender, EventArgs e)
         {
            DateTime tarihSaat = DateTime.Now;
@@ -35,7 +49,7 @@ namespace doguAkdenizApp
             
         }
 
-        private void pano_FormClosing(object sender, FormClosingEventArgs e)
+        public void pano_FormClosing(object sender, FormClosingEventArgs e)
         {
            
             DialogResult dialog = MessageBox.Show("Uygulamadan çıkış yapmak istediğinizden emin misiniz?", "Çıkış", MessageBoxButtons.YesNo);
@@ -57,6 +71,13 @@ namespace doguAkdenizApp
                 e.Cancel = true;
                 close_alert_shown = false;
             }*/
+        }
+
+        private void btnPanoProje_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            proje projeEkrani = new proje(lblPanoLogInfo.Text);
+            projeEkrani.ShowDialog();
         }
     }
 }

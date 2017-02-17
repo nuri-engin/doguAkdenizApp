@@ -755,6 +755,7 @@
             this.btnUyeYenile.TabIndex = 43;
             this.btnUyeYenile.Text = "Yenile";
             this.btnUyeYenile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tipUyeYenile.SetToolTip(this.btnUyeYenile, "Veritabanını yeniler");
             this.btnUyeYenile.UseVisualStyleBackColor = false;
             this.btnUyeYenile.Click += new System.EventHandler(this.btnUyeYenile_Click);
             // 
