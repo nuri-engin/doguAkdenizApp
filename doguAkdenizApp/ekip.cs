@@ -20,6 +20,7 @@ namespace doguAkdenizApp
             lblEkipLoginfo.Text = logInfo;
             loadTable();
             dtpEkipKayitTarihi.Value = DateTime.Now;
+            dgvEkip.Columns[0].Width = 50;
         }
 
         
@@ -39,9 +40,9 @@ namespace doguAkdenizApp
 
         void loadTable()
         {
-            string myConnection = "datasource=160.153.129.19;port=3306;username=nuridesengin;password=uiVypENP65";
+            string myConnection = "datasource=root;port=root;username=root;password=root";
             MySqlConnection myConn = new MySqlConnection(myConnection);
-            MySqlCommand cmdDataBase = new MySqlCommand("select id as 'ID',name as 'İsim',surname as 'Soyisim',idno as 'TCNo',birth as 'DoğumTarihi',telephone as 'Telefon',email as 'ePosta',city as 'Şehir',adress as 'Adres',recorddate as 'KayıtTarihi',username as 'Yetkili' from doguAkdenizApp.team;", myConn);
+            MySqlCommand cmdDataBase = new MySqlCommand("select id as 'ID',name as 'İsim',surname as 'Soyisim',idno as 'TCNo',birth as 'DoğumTarihi',telephone as 'Telefon',email as 'ePosta',city as 'Şehir',adress as 'Adres',title as 'Gorevi', recorddate as 'KayıtTarihi',username as 'Yetkili' from doguAkdenizApp.team;", myConn);
             try
             {
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter();
@@ -63,14 +64,14 @@ namespace doguAkdenizApp
         private void btnEkipPano_Click(object sender, EventArgs e)
         {
             this.Hide();
-            pano pano = new pano(lblEkipLoginfo.Text);
-            pano.ShowDialog();
+            pano panoEkrani = new pano(lblEkipLoginfo.Text);
+            panoEkrani.ShowDialog();
         }
 
         private void btnEkipKaydet_Click(object sender, EventArgs e)
         {
-            string myConnection = "datasource=160.153.129.19;port=3306;username=nuridesengin;password=uiVypENP65";
-            string Query = "insert into doguAkdenizApp.team (id,name,surname,idno,birth,telephone,email,city,adress,recorddate,username) values('" + this.lblEkipID.Text + "','" + this.txtEkipIsim.Text + "', '" + this.txtEkipSoyisim.Text + "', '" + this.txtEkipTc.Text + "', '" + this.dtpEkipDogum.Text + "', '" + this.txtEkipTelefon.Text + "', '" + this.txtEkipEposta.Text + "', '" + this.cbEkipSehir.Text + "', '" + this.txtEkipAdres.Text + "', '"+this.dtpEkipKayitTarihi.Text+ "', '" + this.lblEkipLoginfo.Text + "');";
+            string myConnection = "datasource=root;port=root;username=root;password=root";
+            string Query = "insert into doguAkdenizApp.team (name,surname,idno,birth,telephone,email,city,adress,title,recorddate,username) values('" + this.txtEkipIsim.Text + "', '" + this.txtEkipSoyisim.Text + "', '" + this.txtEkipTc.Text + "', '" + this.dtpEkipDogum.Text + "', '" + this.txtEkipTelefon.Text + "', '" + this.txtEkipEposta.Text + "', '" + this.cbEkipSehir.Text + "', '" + this.txtEkipAdres.Text + "', '" + this.cbEkipGorev.Text + "', '" + this.dtpEkipKayitTarihi.Text+ "', '" + this.lblEkipLoginfo.Text + "');";
             MySqlConnection myConn = new MySqlConnection(myConnection);
             MySqlCommand cmdDataBase = new MySqlCommand(Query, myConn);
             MySqlDataReader myReader;
@@ -80,6 +81,7 @@ namespace doguAkdenizApp
                 myReader = cmdDataBase.ExecuteReader();
                 MessageBox.Show("Kayıt başarılı!");
                 while (myReader.Read()) { }
+                clearAllTxt();
             }
             catch (Exception ex)
             {
@@ -87,13 +89,13 @@ namespace doguAkdenizApp
             }
 
             loadTable();
-            clearAllTxt();
+
         }
 
         private void btnEkipGuncelle_Click(object sender, EventArgs e)
         {   
-            string myConnection = "datasource=160.153.129.19;port=3306;username=nuridesengin;password=uiVypENP65";
-            string Query = "update doguAkdenizApp.team set id='" + this.lblEkipID.Text + "', name='" + this.txtEkipIsim.Text + "', surname='" + this.txtEkipSoyisim.Text + "', idno='" + this.txtEkipTc.Text + "', birth='" + this.dtpEkipDogum.Text + "', telephone='" + this.txtEkipTelefon.Text + "', email='" + this.txtEkipEposta.Text + "', city='" + this.cbEkipSehir.Text + "', adress='" + this.txtEkipAdres.Text + "', recorddate='"+this.dtpEkipKayitTarihi.Text+ "', username='" + this.lblEkipLoginfo.Text + "' where id='" + this.lblEkipKayitNo.Text + "';";
+            string myConnection = "datasource=root;port=root;username=root;password=root";
+            string Query = "update doguAkdenizApp.team set name='" + this.txtEkipIsim.Text + "', surname='" + this.txtEkipSoyisim.Text + "', idno='" + this.txtEkipTc.Text + "', birth='" + this.dtpEkipDogum.Text + "', telephone='" + this.txtEkipTelefon.Text + "', email='" + this.txtEkipEposta.Text + "', city='" + this.cbEkipSehir.Text + "', adress='" + this.txtEkipAdres.Text + "', title='" + this.cbEkipGorev.Text + "', recorddate='" + this.dtpEkipKayitTarihi.Text + "', username='" + this.lblEkipLoginfo.Text + "' where id='" + this.lblEkipID.Text + "'";
             MySqlConnection myConn = new MySqlConnection(myConnection);
             MySqlCommand cmdDataBase = new MySqlCommand(Query, myConn);
             MySqlDataReader myReader;
@@ -103,18 +105,19 @@ namespace doguAkdenizApp
                 myReader = cmdDataBase.ExecuteReader();
                 MessageBox.Show("Güncelleme başarılı!");
                 while (myReader.Read()) { }
+                clearAllTxt();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             loadTable();
-            clearAllTxt();
+           
         }
 
         private void btnEkipSil_Click(object sender, EventArgs e)
         {
-            string myConnection = "datasource=160.153.129.19;port=3306;username=nuridesengin;password=uiVypENP65";
+            string myConnection = "datasource=root;port=root;username=root;password=root";
             string Query = "delete from doguAkdenizApp.team where id='" + this.lblEkipID.Text + "';";
             MySqlConnection myConn = new MySqlConnection(myConnection);
             MySqlCommand cmdDataBase = new MySqlCommand(Query, myConn);
@@ -125,24 +128,24 @@ namespace doguAkdenizApp
                 myReader = cmdDataBase.ExecuteReader();
                 MessageBox.Show("Silme işlemi başarılı!");
                 while (myReader.Read()) { }
+                clearAllTxt();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             loadTable();
-            clearAllTxt();
+            
         }
 
         private void btnEkipYenile_Click(object sender, EventArgs e)
         {
             loadTable();
-            clearAllTxt();
         }
 
         private void dgvEkip_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            dgvEkip.Columns[0].Width = 50;
+           
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.dgvEkip.Rows[e.RowIndex];
@@ -155,6 +158,7 @@ namespace doguAkdenizApp
                 txtEkipEposta.Text = row.Cells["ePosta"].Value.ToString();
                 cbEkipSehir.Text = row.Cells["Sehir"].Value.ToString();
                 txtEkipAdres.Text = row.Cells["Adres"].Value.ToString();
+                cbEkipGorev.Text = row.Cells["Gorevi"].Value.ToString();
                 dtpEkipKayitTarihi.Text = row.Cells["KayitTarihi"].Value.ToString();
 
             }      
@@ -163,24 +167,26 @@ namespace doguAkdenizApp
         private void btnEkipYeni_Click(object sender, EventArgs e)
         {
             clearAllTxt();
+            loadTable();
         }
 
         private void btnEkipTemizle_Click(object sender, EventArgs e)
         {
             clearAllTxt();
+            loadTable();
         }
 
         private void btnEkipAra_Click(object sender, EventArgs e)
         {
             DataView DV = new DataView(dbdataset);
-            DV.RowFilter = string.Format("Isim LIKE '%{0}%' OR Soyisim LIKE '%{0}%' OR Telefon LIKE '%{0}%' OR ePosta LIKE '%{0}%' OR Sehir LIKE '%{0}%' OR Adres LIKE '%{0}%' OR Yetkili LIKE '%{0}%'", txtEkipAra.Text);
+            DV.RowFilter = string.Format("Isim LIKE '%{0}%' OR Soyisim LIKE '%{0}%' OR Telefon LIKE '%{0}%' OR ePosta LIKE '%{0}%' OR Sehir LIKE '%{0}%' OR Adres LIKE '%{0}%' OR Gorevi LIKE'%{0}%'", txtEkipAra.Text);
             dgvEkip.DataSource = DV;
         }
 
         private void btnEkipExcel_Click(object sender, EventArgs e)
         {   // Kod bloğu çalışmadı.
             /*
-            string myConnection = "datasource=160.153.129.19;port=3306;username=nuridesengin;password=uiVypENP65";
+            string myConnection = "datasource=root;port=root;username=root;password=root";
             MySqlConnection myConn = new MySqlConnection(myConnection);
             MySqlCommand cmdDataBase = new MySqlCommand("select id,name,surname,idno,birth,telephone,email,city,adress,recorddate from doguAkdenizApp.team;", myConn);
 
@@ -200,7 +206,7 @@ namespace doguAkdenizApp
 
             //Bu kod bloğuda çalışmadı.
             /*
-            string myConnection = "datasource=160.153.129.19;port=3306;username=nuridesengin;password=uiVypENP65";
+            string myConnection = "datasource=root;port=root;username=root;password=root";
             MySqlConnection myConn = new MySqlConnection(myConnection);
             MySqlCommand cmdDataBase = new MySqlCommand("select id,name,surname,idno,birth,telephone,email,city,adress,recorddate from doguAkdenizApp.team;", myConn);
             try
@@ -255,11 +261,13 @@ namespace doguAkdenizApp
         private void cmsEkipItemYeni_Click(object sender, EventArgs e)
         {
                 clearAllTxt();
+            loadTable();
         }
 
         private void cmsEkipItemTemizle_Click(object sender, EventArgs e)
         {
             clearAllTxt();
+            loadTable();
         }
 
         private void cmsEkipItemYenile_Click(object sender, EventArgs e)

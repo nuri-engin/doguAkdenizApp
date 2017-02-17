@@ -15,7 +15,7 @@ namespace doguAkdenizApp
         {
             try
             {
-                string myConnection = "datasource=root;port=root;username=root;password=root";
+                string myConnection= "datasource=root;port=root;username=root;password=root";
     
                 MySqlConnection myConn = new MySqlConnection(myConnection);
 
@@ -31,7 +31,7 @@ namespace doguAkdenizApp
                 }
                 if (count == 1)
                 {
-                    MessageBox.Show("Giriş başarılı!", "Giriş Başarılı", MessageBoxButtons.OK);
+                    //MessageBox.Show("Giriş başarılı!", "Giriş Başarılı", MessageBoxButtons.OK);
                     this.Hide();
                     pano pano = new pano(txtGirisKullanici.Text);
                     pano.ShowDialog();

@@ -79,6 +79,8 @@
             this.lblEkipID = new System.Windows.Forms.Label();
             this.lblEkipKayitNo = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbEkipGorev = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lblEkipKullanici = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEkip)).BeginInit();
@@ -96,10 +98,10 @@
             this.dgvEkip.AllowUserToAddRows = false;
             this.dgvEkip.AllowUserToDeleteRows = false;
             this.dgvEkip.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEkip.Location = new System.Drawing.Point(40, 336);
+            this.dgvEkip.Location = new System.Drawing.Point(12, 343);
             this.dgvEkip.Name = "dgvEkip";
             this.dgvEkip.ReadOnly = true;
-            this.dgvEkip.Size = new System.Drawing.Size(605, 239);
+            this.dgvEkip.Size = new System.Drawing.Size(672, 239);
             this.dgvEkip.TabIndex = 20;
             this.dgvEkip.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEkip_CellContentClick);
             // 
@@ -114,9 +116,9 @@
             this.groupBox1.Controls.Add(this.btnEkipSil);
             this.groupBox1.Controls.Add(this.btnEkipTemizle);
             this.groupBox1.ForeColor = System.Drawing.Color.Firebrick;
-            this.groupBox1.Location = new System.Drawing.Point(40, 23);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(605, 105);
+            this.groupBox1.Size = new System.Drawing.Size(672, 105);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ekip Kaydı Olustur";
@@ -140,7 +142,7 @@
             // 
             // txtEkipAra
             // 
-            this.txtEkipAra.Location = new System.Drawing.Point(399, 27);
+            this.txtEkipAra.Location = new System.Drawing.Point(471, 27);
             this.txtEkipAra.Name = "txtEkipAra";
             this.txtEkipAra.Size = new System.Drawing.Size(195, 20);
             this.txtEkipAra.TabIndex = 14;
@@ -161,13 +163,13 @@
             this.btnEkipAra.ForeColor = System.Drawing.Color.DarkRed;
             this.btnEkipAra.Image = global::doguAkdenizApp.Properties.Resources.glass_24;
             this.btnEkipAra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEkipAra.Location = new System.Drawing.Point(514, 57);
+            this.btnEkipAra.Location = new System.Drawing.Point(586, 57);
             this.btnEkipAra.Name = "btnEkipAra";
             this.btnEkipAra.Size = new System.Drawing.Size(80, 32);
             this.btnEkipAra.TabIndex = 15;
             this.btnEkipAra.Text = "Ara";
             this.btnEkipAra.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tipEkipAra.SetToolTip(this.btnEkipAra, "Veritabanında yalnızca \'İsme\' göre arama yapar");
+            this.tipEkipAra.SetToolTip(this.btnEkipAra, "Veritabanında arama yapar");
             this.btnEkipAra.UseVisualStyleBackColor = false;
             this.btnEkipAra.Click += new System.EventHandler(this.btnEkipAra_Click);
             // 
@@ -231,7 +233,7 @@
             this.btnEkipTemizle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEkipTemizle.Location = new System.Drawing.Point(153, 20);
             this.btnEkipTemizle.Name = "btnEkipTemizle";
-            this.btnEkipTemizle.Size = new System.Drawing.Size(86, 31);
+            this.btnEkipTemizle.Size = new System.Drawing.Size(86, 32);
             this.btnEkipTemizle.TabIndex = 9;
             this.btnEkipTemizle.Text = "Temizle";
             this.btnEkipTemizle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -257,7 +259,7 @@
             this.lblEkipSoyisim.BackColor = System.Drawing.Color.Transparent;
             this.lblEkipSoyisim.Font = new System.Drawing.Font("Tw Cen MT Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEkipSoyisim.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblEkipSoyisim.Location = new System.Drawing.Point(299, 19);
+            this.lblEkipSoyisim.Location = new System.Drawing.Point(371, 21);
             this.lblEkipSoyisim.Name = "lblEkipSoyisim";
             this.lblEkipSoyisim.Size = new System.Drawing.Size(61, 22);
             this.lblEkipSoyisim.TabIndex = 3;
@@ -269,7 +271,7 @@
             this.lblEkipDogum.BackColor = System.Drawing.Color.Transparent;
             this.lblEkipDogum.Font = new System.Drawing.Font("Tw Cen MT Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEkipDogum.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblEkipDogum.Location = new System.Drawing.Point(299, 43);
+            this.lblEkipDogum.Location = new System.Drawing.Point(371, 44);
             this.lblEkipDogum.Name = "lblEkipDogum";
             this.lblEkipDogum.Size = new System.Drawing.Size(92, 22);
             this.lblEkipDogum.TabIndex = 4;
@@ -281,7 +283,7 @@
             this.lblEkipTc.BackColor = System.Drawing.Color.Transparent;
             this.lblEkipTc.Font = new System.Drawing.Font("Tw Cen MT Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEkipTc.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblEkipTc.Location = new System.Drawing.Point(5, 43);
+            this.lblEkipTc.Location = new System.Drawing.Point(3, 47);
             this.lblEkipTc.Name = "lblEkipTc";
             this.lblEkipTc.Size = new System.Drawing.Size(48, 22);
             this.lblEkipTc.TabIndex = 5;
@@ -293,7 +295,7 @@
             this.lblEkipTelefon.BackColor = System.Drawing.Color.Transparent;
             this.lblEkipTelefon.Font = new System.Drawing.Font("Tw Cen MT Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEkipTelefon.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblEkipTelefon.Location = new System.Drawing.Point(5, 65);
+            this.lblEkipTelefon.Location = new System.Drawing.Point(3, 73);
             this.lblEkipTelefon.Name = "lblEkipTelefon";
             this.lblEkipTelefon.Size = new System.Drawing.Size(59, 22);
             this.lblEkipTelefon.TabIndex = 6;
@@ -305,7 +307,7 @@
             this.lblEkipEposta.BackColor = System.Drawing.Color.Transparent;
             this.lblEkipEposta.Font = new System.Drawing.Font("Tw Cen MT Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEkipEposta.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblEkipEposta.Location = new System.Drawing.Point(299, 65);
+            this.lblEkipEposta.Location = new System.Drawing.Point(371, 71);
             this.lblEkipEposta.Name = "lblEkipEposta";
             this.lblEkipEposta.Size = new System.Drawing.Size(55, 22);
             this.lblEkipEposta.TabIndex = 7;
@@ -317,7 +319,7 @@
             this.lblEkipAdres.BackColor = System.Drawing.Color.Transparent;
             this.lblEkipAdres.Font = new System.Drawing.Font("Tw Cen MT Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEkipAdres.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblEkipAdres.Location = new System.Drawing.Point(299, 88);
+            this.lblEkipAdres.Location = new System.Drawing.Point(371, 97);
             this.lblEkipAdres.Name = "lblEkipAdres";
             this.lblEkipAdres.Size = new System.Drawing.Size(50, 22);
             this.lblEkipAdres.TabIndex = 8;
@@ -329,7 +331,7 @@
             this.lblEkipSehir.BackColor = System.Drawing.Color.Transparent;
             this.lblEkipSehir.Font = new System.Drawing.Font("Tw Cen MT Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEkipSehir.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblEkipSehir.Location = new System.Drawing.Point(5, 90);
+            this.lblEkipSehir.Location = new System.Drawing.Point(3, 99);
             this.lblEkipSehir.Name = "lblEkipSehir";
             this.lblEkipSehir.Size = new System.Drawing.Size(46, 22);
             this.lblEkipSehir.TabIndex = 9;
@@ -344,7 +346,7 @@
             // 
             // txtEkipTc
             // 
-            this.txtEkipTc.Location = new System.Drawing.Point(68, 46);
+            this.txtEkipTc.Location = new System.Drawing.Point(68, 47);
             this.txtEkipTc.Name = "txtEkipTc";
             this.txtEkipTc.Size = new System.Drawing.Size(201, 20);
             this.txtEkipTc.TabIndex = 2;
@@ -352,20 +354,14 @@
             // 
             // txtEkipTelefon
             // 
-            this.txtEkipTelefon.Location = new System.Drawing.Point(68, 68);
+            this.txtEkipTelefon.Location = new System.Drawing.Point(68, 73);
             this.txtEkipTelefon.Name = "txtEkipTelefon";
             this.txtEkipTelefon.Size = new System.Drawing.Size(201, 20);
             this.txtEkipTelefon.TabIndex = 4;
             // 
             // txtEkipEposta
             // 
-            this.txtEkipEposta.AutoCompleteCustomSource.AddRange(new string[] {
-            "@gmail.com",
-            "@live.com",
-            "@yahoo.com"});
-            this.txtEkipEposta.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.txtEkipEposta.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtEkipEposta.Location = new System.Drawing.Point(393, 65);
+            this.txtEkipEposta.Location = new System.Drawing.Point(465, 71);
             this.txtEkipEposta.Name = "txtEkipEposta";
             this.txtEkipEposta.Size = new System.Drawing.Size(201, 20);
             this.txtEkipEposta.TabIndex = 5;
@@ -373,14 +369,14 @@
             // 
             // txtEkipAdres
             // 
-            this.txtEkipAdres.Location = new System.Drawing.Point(393, 90);
+            this.txtEkipAdres.Location = new System.Drawing.Point(465, 97);
             this.txtEkipAdres.Name = "txtEkipAdres";
             this.txtEkipAdres.Size = new System.Drawing.Size(201, 20);
             this.txtEkipAdres.TabIndex = 7;
             // 
             // txtEkipSoyisim
             // 
-            this.txtEkipSoyisim.Location = new System.Drawing.Point(393, 19);
+            this.txtEkipSoyisim.Location = new System.Drawing.Point(465, 19);
             this.txtEkipSoyisim.Name = "txtEkipSoyisim";
             this.txtEkipSoyisim.Size = new System.Drawing.Size(201, 20);
             this.txtEkipSoyisim.TabIndex = 1;
@@ -390,7 +386,7 @@
             this.btnEkipExcel.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnEkipExcel.Font = new System.Drawing.Font("Tw Cen MT Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEkipExcel.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnEkipExcel.Location = new System.Drawing.Point(464, 581);
+            this.btnEkipExcel.Location = new System.Drawing.Point(503, 588);
             this.btnEkipExcel.Name = "btnEkipExcel";
             this.btnEkipExcel.Size = new System.Drawing.Size(96, 32);
             this.btnEkipExcel.TabIndex = 25;
@@ -403,7 +399,7 @@
             this.btnEkipEposta.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnEkipEposta.Font = new System.Drawing.Font("Tw Cen MT Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEkipEposta.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnEkipEposta.Location = new System.Drawing.Point(362, 581);
+            this.btnEkipEposta.Location = new System.Drawing.Point(401, 588);
             this.btnEkipEposta.Name = "btnEkipEposta";
             this.btnEkipEposta.Size = new System.Drawing.Size(96, 32);
             this.btnEkipEposta.TabIndex = 26;
@@ -415,7 +411,7 @@
             this.btnEkipPano.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnEkipPano.Font = new System.Drawing.Font("Tw Cen MT Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEkipPano.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnEkipPano.Location = new System.Drawing.Point(74, 581);
+            this.btnEkipPano.Location = new System.Drawing.Point(46, 588);
             this.btnEkipPano.Name = "btnEkipPano";
             this.btnEkipPano.Size = new System.Drawing.Size(102, 32);
             this.btnEkipPano.TabIndex = 29;
@@ -429,7 +425,7 @@
             this.lblEkipKayitTarihi.BackColor = System.Drawing.Color.Transparent;
             this.lblEkipKayitTarihi.Font = new System.Drawing.Font("Tw Cen MT Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEkipKayitTarihi.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblEkipKayitTarihi.Location = new System.Drawing.Point(299, 20);
+            this.lblEkipKayitTarihi.Location = new System.Drawing.Point(371, 19);
             this.lblEkipKayitTarihi.Name = "lblEkipKayitTarihi";
             this.lblEkipKayitTarihi.Size = new System.Drawing.Size(80, 22);
             this.lblEkipKayitTarihi.TabIndex = 30;
@@ -438,115 +434,117 @@
             // dtpEkipKayitTarihi
             // 
             this.dtpEkipKayitTarihi.CustomFormat = "yyyy-MM-dd";
-            this.dtpEkipKayitTarihi.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEkipKayitTarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpEkipKayitTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpEkipKayitTarihi.Location = new System.Drawing.Point(393, 20);
+            this.dtpEkipKayitTarihi.Location = new System.Drawing.Point(465, 21);
             this.dtpEkipKayitTarihi.MinDate = new System.DateTime(2015, 12, 1, 0, 0, 0, 0);
             this.dtpEkipKayitTarihi.Name = "dtpEkipKayitTarihi";
-            this.dtpEkipKayitTarihi.Size = new System.Drawing.Size(201, 21);
+            this.dtpEkipKayitTarihi.Size = new System.Drawing.Size(201, 20);
             this.dtpEkipKayitTarihi.TabIndex = 31;
             // 
             // dtpEkipDogum
             // 
             this.dtpEkipDogum.CustomFormat = "yyyy-MM-dd";
-            this.dtpEkipDogum.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEkipDogum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpEkipDogum.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpEkipDogum.Location = new System.Drawing.Point(393, 45);
+            this.dtpEkipDogum.Location = new System.Drawing.Point(465, 45);
             this.dtpEkipDogum.MinDate = new System.DateTime(1910, 1, 1, 0, 0, 0, 0);
             this.dtpEkipDogum.Name = "dtpEkipDogum";
-            this.dtpEkipDogum.Size = new System.Drawing.Size(201, 21);
+            this.dtpEkipDogum.Size = new System.Drawing.Size(201, 20);
             this.dtpEkipDogum.TabIndex = 32;
             this.dtpEkipDogum.Value = new System.DateTime(1999, 12, 31, 0, 0, 0, 0);
             // 
             // cbEkipSehir
             // 
-            this.cbEkipSehir.Font = new System.Drawing.Font("Tw Cen MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEkipSehir.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbEkipSehir.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbEkipSehir.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEkipSehir.FormattingEnabled = true;
             this.cbEkipSehir.Items.AddRange(new object[] {
-            "01 Adana",
-            "02 Adıyaman",
-            "03 Afyon ",
-            "04 Agrı ",
-            "05 Amasya",
-            "06 Ankara",
-            "07 Antalya",
-            "08 Artvin",
-            "09 Aydın",
-            "10 Balıkesir",
-            "11 Bilecik",
-            "12 Bingöl",
-            "13 Bitlis",
-            "14 Bolu",
-            "15 Burdur",
-            "16 Bursa",
-            "17 Çanakkale",
-            "18 Çankırı",
-            "19 Çorum",
-            "20 Denizli",
-            "21 Diyarbakır",
-            "22 Edirne",
-            "23 Elazıg",
-            "24 Erzincan",
-            "25 Erzurum",
-            "26 Eskişehir",
-            "27 Gaziantep",
-            "28 Giresun",
-            "29 Gümüşhane",
-            "30 Hakkari",
-            "31 Hatay",
-            "32 Isparta",
-            "33 Içel (Mersin)",
-            "34 Istanbul",
-            "35 Izmir",
-            "36 Kars",
-            "37 Kastamonu",
-            "38 Kayseri",
-            "39 Kırklareli",
-            "40 Kırşehir",
-            "41 Kocaeli",
-            "42 Konya",
-            "43 Kütahya",
-            "44 Malatya",
-            "45 Manisa",
-            "46 K.maraş",
-            "47 Mardin",
-            "48 Mugla",
-            "49 Muş",
-            "50 Nevşehir",
-            "51 Nigde",
-            "52 Ordu",
-            "53 Rize",
-            "54 Sakarya",
-            "55 Samsun",
-            "56 Siirt",
-            "57 Sinop",
-            "58 Sivas",
-            "59 Tekirdag",
-            "60 Tokat",
-            "61 Trabzon",
-            "62 Tunceli",
-            "63 Şanlıurfa",
-            "64 Uşak",
-            "65 Van",
-            "66 Yozgat",
-            "67 Zonguldak",
-            "68 Aksaray",
-            "69 Bayburt",
-            "70 Karaman",
-            "71 Kırıkkale",
-            "72 Batman",
-            "73 Şırnak",
-            "74 Bartın",
-            "75 Ardahan",
-            "76 Igdır",
-            "77 Yalova",
-            "78 Karabük",
-            "79 Kilis",
-            "80 Osmaniye",
-            "81 Düzce"});
-            this.cbEkipSehir.Location = new System.Drawing.Point(68, 90);
+            "Adana",
+            "Adıyaman",
+            "Afyon",
+            "Ağrı",
+            "Amasya",
+            "Ankara",
+            "Antalya",
+            "Artvin",
+            "Aydın",
+            "Balıkesir",
+            "Bilecik",
+            "Bingöl",
+            "Bitlis",
+            "Bolu",
+            "Burdur",
+            "Bursa",
+            "Çanakkale",
+            "Çankırı",
+            "Çorum",
+            "Denizli",
+            "Diyarbakır",
+            "Edirne",
+            "Elazığ",
+            "Erzincan",
+            "Erzurum",
+            "Eskişehir",
+            "Gaziantep",
+            "Giresun",
+            "Gümüşhane",
+            "Hakkari",
+            "Hatay",
+            "Isparta",
+            "Mersin",
+            "İstanbul",
+            "İzmir",
+            "Kars",
+            "Kastamonu",
+            "Kayseri",
+            "Kırklareli",
+            "Kırşehir",
+            "Kocaeli",
+            "Konya",
+            "Kütahya",
+            "Malatya",
+            "Manisa",
+            "Kahramanmaraş",
+            "Mardin",
+            "Muğla",
+            "Muş",
+            "Nevşehir",
+            "Niğde",
+            "Ordu",
+            "Rize",
+            "Sakarya",
+            "Samsun",
+            "Siirt",
+            "Sinop",
+            "Sivas",
+            "Tekirdağ",
+            "Tokat",
+            "Trabzon",
+            "Tunceli",
+            "Şanlıurfa",
+            "Uşak",
+            "Van",
+            "Yozgat",
+            "Zonguldak",
+            "Aksaray",
+            "Bayburt",
+            "Karaman",
+            "Kırıkkale",
+            "Batman",
+            "Şırnak",
+            "Bartın",
+            "Ardahan",
+            "Iğdır",
+            "Yalova",
+            "Karabük",
+            "Kilis",
+            "Osmaniye",
+            "Düzce"});
+            this.cbEkipSehir.Location = new System.Drawing.Point(68, 99);
             this.cbEkipSehir.Name = "cbEkipSehir";
-            this.cbEkipSehir.Size = new System.Drawing.Size(201, 23);
+            this.cbEkipSehir.Size = new System.Drawing.Size(201, 20);
             this.cbEkipSehir.TabIndex = 33;
             this.cbEkipSehir.Text = "Lütfen listeden şehir seçimi yapınız.";
             // 
@@ -566,7 +564,7 @@
             // picEkipDrive
             // 
             this.picEkipDrive.Image = global::doguAkdenizApp.Properties.Resources.drive;
-            this.picEkipDrive.Location = new System.Drawing.Point(326, 586);
+            this.picEkipDrive.Location = new System.Drawing.Point(365, 593);
             this.picEkipDrive.Name = "picEkipDrive";
             this.picEkipDrive.Size = new System.Drawing.Size(30, 32);
             this.picEkipDrive.TabIndex = 35;
@@ -581,7 +579,7 @@
             this.btnEkipYenile.ForeColor = System.Drawing.Color.DarkRed;
             this.btnEkipYenile.Image = global::doguAkdenizApp.Properties.Resources.radial_arrows_20;
             this.btnEkipYenile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEkipYenile.Location = new System.Drawing.Point(566, 581);
+            this.btnEkipYenile.Location = new System.Drawing.Point(605, 588);
             this.btnEkipYenile.Name = "btnEkipYenile";
             this.btnEkipYenile.Size = new System.Drawing.Size(79, 32);
             this.btnEkipYenile.TabIndex = 10;
@@ -594,7 +592,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::doguAkdenizApp.Properties.Resources.list;
-            this.pictureBox2.Location = new System.Drawing.Point(40, 581);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 588);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(35, 44);
             this.pictureBox2.TabIndex = 27;
@@ -656,6 +654,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.cbEkipGorev);
+            this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.lblEkipIsim);
             this.groupBox2.Controls.Add(this.lblEkipSoyisim);
             this.groupBox2.Controls.Add(this.lblEkipDogum);
@@ -673,12 +673,44 @@
             this.groupBox2.Controls.Add(this.txtEkipAdres);
             this.groupBox2.Controls.Add(this.txtEkipSoyisim);
             this.groupBox2.ForeColor = System.Drawing.Color.Firebrick;
-            this.groupBox2.Location = new System.Drawing.Point(40, 195);
+            this.groupBox2.Location = new System.Drawing.Point(12, 183);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(605, 125);
+            this.groupBox2.Size = new System.Drawing.Size(672, 154);
             this.groupBox2.TabIndex = 38;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Kişi Bilgileri";
+            // 
+            // cbEkipGorev
+            // 
+            this.cbEkipGorev.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbEkipGorev.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbEkipGorev.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEkipGorev.FormattingEnabled = true;
+            this.cbEkipGorev.Items.AddRange(new object[] {
+            "Başkan",
+            "Başkan Yardımcısı",
+            "Proje ve Üye Sorumlusu",
+            "Genel Sekreter",
+            "Sayman",
+            "Üye",
+            "Temsili Üye"});
+            this.cbEkipGorev.Location = new System.Drawing.Point(68, 125);
+            this.cbEkipGorev.Name = "cbEkipGorev";
+            this.cbEkipGorev.Size = new System.Drawing.Size(201, 20);
+            this.cbEkipGorev.TabIndex = 35;
+            this.cbEkipGorev.Text = "Lütfen listeden görev seçimi yapınız.";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Tw Cen MT Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Firebrick;
+            this.label1.Location = new System.Drawing.Point(3, 125);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 22);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Görevi:";
             // 
             // groupBox3
             // 
@@ -689,9 +721,9 @@
             this.groupBox3.Controls.Add(this.dtpEkipKayitTarihi);
             this.groupBox3.Controls.Add(this.lblEkipLoginfo);
             this.groupBox3.ForeColor = System.Drawing.Color.Firebrick;
-            this.groupBox3.Location = new System.Drawing.Point(40, 135);
+            this.groupBox3.Location = new System.Drawing.Point(12, 123);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(605, 54);
+            this.groupBox3.Size = new System.Drawing.Size(672, 54);
             this.groupBox3.TabIndex = 39;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Kayıt Bilgileri";
@@ -714,7 +746,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(665, 625);
+            this.ClientSize = new System.Drawing.Size(696, 639);
             this.ContextMenuStrip = this.cmsEkip;
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -799,5 +831,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label lblEkipKullanici;
+        private System.Windows.Forms.ComboBox cbEkipGorev;
+        private System.Windows.Forms.Label label1;
     }
 }

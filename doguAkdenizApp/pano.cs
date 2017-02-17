@@ -17,14 +17,22 @@ namespace doguAkdenizApp
         private void btnPanoEkip_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ekip ekip = new ekip(lblPanoLogInfo.Text);
-            ekip.ShowDialog();
+            ekip ekipEkrani = new ekip(lblPanoLogInfo.Text);
+            ekipEkrani.ShowDialog();
+        }
+
+        private void btnPanoUye_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            uye uyeEkrani = new uye(lblPanoLogInfo.Text);
+            uyeEkrani.ShowDialog();
         }
 
         private void timerPano_Tick(object sender, EventArgs e)
         {
-            DateTime tarihSaat = DateTime.Now;
-            this.lblPanoTime.Text = tarihSaat.ToString();
+           DateTime tarihSaat = DateTime.Now;
+           this.lblPanoTime.Text = tarihSaat.ToString();
+            
         }
 
         private void pano_FormClosing(object sender, FormClosingEventArgs e)
@@ -50,6 +58,5 @@ namespace doguAkdenizApp
                 close_alert_shown = false;
             }*/
         }
-        
     }
 }

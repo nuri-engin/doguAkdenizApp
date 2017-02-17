@@ -46,6 +46,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblPanoKullanici = new System.Windows.Forms.Label();
             this.lblPanoLogInfo = new System.Windows.Forms.Label();
             this.lblPanoTime = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -53,7 +54,6 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerPano = new System.Windows.Forms.Timer(this.components);
-            this.lblPanoKullanici = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -172,6 +172,7 @@
             this.btnPanoUye.TabIndex = 16;
             this.btnPanoUye.Text = "Üye";
             this.btnPanoUye.UseVisualStyleBackColor = false;
+            this.btnPanoUye.Click += new System.EventHandler(this.btnPanoUye_Click);
             // 
             // btnPanoEkip
             // 
@@ -266,6 +267,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Alt Bilgi";
             // 
+            // lblPanoKullanici
+            // 
+            this.lblPanoKullanici.AutoSize = true;
+            this.lblPanoKullanici.Font = new System.Drawing.Font("Tw Cen MT Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPanoKullanici.ForeColor = System.Drawing.Color.IndianRed;
+            this.lblPanoKullanici.Location = new System.Drawing.Point(8, 16);
+            this.lblPanoKullanici.Name = "lblPanoKullanici";
+            this.lblPanoKullanici.Size = new System.Drawing.Size(64, 22);
+            this.lblPanoKullanici.TabIndex = 25;
+            this.lblPanoKullanici.Text = "Kullanıcı:";
+            // 
             // lblPanoLogInfo
             // 
             this.lblPanoLogInfo.AutoSize = true;
@@ -334,17 +346,6 @@
             // timerPano
             // 
             this.timerPano.Tick += new System.EventHandler(this.timerPano_Tick);
-            // 
-            // lblPanoKullanici
-            // 
-            this.lblPanoKullanici.AutoSize = true;
-            this.lblPanoKullanici.Font = new System.Drawing.Font("Tw Cen MT Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPanoKullanici.ForeColor = System.Drawing.Color.IndianRed;
-            this.lblPanoKullanici.Location = new System.Drawing.Point(8, 16);
-            this.lblPanoKullanici.Name = "lblPanoKullanici";
-            this.lblPanoKullanici.Size = new System.Drawing.Size(64, 22);
-            this.lblPanoKullanici.TabIndex = 25;
-            this.lblPanoKullanici.Text = "Kullanıcı:";
             // 
             // pano
             // 
