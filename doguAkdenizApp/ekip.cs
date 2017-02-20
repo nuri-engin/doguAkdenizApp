@@ -260,7 +260,7 @@ namespace doguAkdenizApp
 
         private void cmsEkipItemYeni_Click(object sender, EventArgs e)
         {
-                clearAllTxt();
+            clearAllTxt();
             loadTable();
         }
 

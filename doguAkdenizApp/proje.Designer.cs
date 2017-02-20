@@ -46,6 +46,7 @@
             this.dtpProjeKayitTarihi = new System.Windows.Forms.DateTimePicker();
             this.lblProjeLoginfo = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtProjeOzet = new System.Windows.Forms.TextBox();
             this.txtProjePartner = new System.Windows.Forms.TextBox();
             this.lblProjePartner = new System.Windows.Forms.Label();
             this.txtProjeFonTutar = new System.Windows.Forms.TextBox();
@@ -62,6 +63,9 @@
             this.txtProjeSorumluIletisim = new System.Windows.Forms.TextBox();
             this.txtProjeLokasyon = new System.Windows.Forms.TextBox();
             this.cmsProje = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cmsProjeItemYeni = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsProjeItemTemizle = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsProjeItemYenile = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvProje = new System.Windows.Forms.DataGridView();
             this.picProjeDrive = new System.Windows.Forms.PictureBox();
             this.btnProjeYenile = new System.Windows.Forms.Button();
@@ -69,9 +73,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnProjeEposta = new System.Windows.Forms.Button();
             this.btnProjeExcel = new System.Windows.Forms.Button();
-            this.cmsProjeItemYeni = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsProjeItemTemizle = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsProjeItemYenile = new System.Windows.Forms.ToolStripMenuItem();
             this.tipProjeYeni = new System.Windows.Forms.ToolTip(this.components);
             this.tipProjeTemizle = new System.Windows.Forms.ToolTip(this.components);
             this.tipProjeSil = new System.Windows.Forms.ToolTip(this.components);
@@ -80,7 +81,6 @@
             this.tipProjeAra = new System.Windows.Forms.ToolTip(this.components);
             this.tipProjeDrive = new System.Windows.Forms.ToolTip(this.components);
             this.tipProjeYenile = new System.Windows.Forms.ToolTip(this.components);
-            this.txtProjeOzet = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -105,7 +105,7 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(672, 105);
-            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Proje Kaydı Olustur";
             // 
@@ -119,7 +119,7 @@
             this.btnProjeGuncelle.Location = new System.Drawing.Point(153, 57);
             this.btnProjeGuncelle.Name = "btnProjeGuncelle";
             this.btnProjeGuncelle.Size = new System.Drawing.Size(86, 32);
-            this.btnProjeGuncelle.TabIndex = 12;
+            this.btnProjeGuncelle.TabIndex = 3;
             this.btnProjeGuncelle.Text = "Düzenle";
             this.btnProjeGuncelle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipProjeDuzenle.SetToolTip(this.btnProjeGuncelle, "Seçili kaydı veritabanında gunceller");
@@ -131,7 +131,7 @@
             this.txtProjeAra.Location = new System.Drawing.Point(471, 27);
             this.txtProjeAra.Name = "txtProjeAra";
             this.txtProjeAra.Size = new System.Drawing.Size(195, 20);
-            this.txtProjeAra.TabIndex = 14;
+            this.txtProjeAra.TabIndex = 5;
             // 
             // pictureBox1
             // 
@@ -152,7 +152,7 @@
             this.btnProjeAra.Location = new System.Drawing.Point(586, 57);
             this.btnProjeAra.Name = "btnProjeAra";
             this.btnProjeAra.Size = new System.Drawing.Size(80, 32);
-            this.btnProjeAra.TabIndex = 15;
+            this.btnProjeAra.TabIndex = 6;
             this.btnProjeAra.Text = "Ara";
             this.btnProjeAra.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipProjeAra.SetToolTip(this.btnProjeAra, "Veritabanında arama yapar");
@@ -169,7 +169,7 @@
             this.btnProjeYeni.Location = new System.Drawing.Point(85, 19);
             this.btnProjeYeni.Name = "btnProjeYeni";
             this.btnProjeYeni.Size = new System.Drawing.Size(62, 32);
-            this.btnProjeYeni.TabIndex = 8;
+            this.btnProjeYeni.TabIndex = 0;
             this.btnProjeYeni.Text = "Yeni";
             this.btnProjeYeni.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipProjeYeni.SetToolTip(this.btnProjeYeni, "Yeni bir form açar");
@@ -186,7 +186,7 @@
             this.btnProjeKaydet.Location = new System.Drawing.Point(245, 57);
             this.btnProjeKaydet.Name = "btnProjeKaydet";
             this.btnProjeKaydet.Size = new System.Drawing.Size(85, 32);
-            this.btnProjeKaydet.TabIndex = 13;
+            this.btnProjeKaydet.TabIndex = 4;
             this.btnProjeKaydet.Text = "Kaydet";
             this.btnProjeKaydet.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipProjeKaydet.SetToolTip(this.btnProjeKaydet, "Formda yer alan bilgileri veritabanına kaydeder");
@@ -203,7 +203,7 @@
             this.btnProjeSil.Location = new System.Drawing.Point(85, 57);
             this.btnProjeSil.Name = "btnProjeSil";
             this.btnProjeSil.Size = new System.Drawing.Size(62, 32);
-            this.btnProjeSil.TabIndex = 11;
+            this.btnProjeSil.TabIndex = 2;
             this.btnProjeSil.Text = "Sil";
             this.btnProjeSil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipProjeSil.SetToolTip(this.btnProjeSil, "Seçili kaydı veritabanından siler");
@@ -220,7 +220,7 @@
             this.btnProjeTemizle.Location = new System.Drawing.Point(153, 20);
             this.btnProjeTemizle.Name = "btnProjeTemizle";
             this.btnProjeTemizle.Size = new System.Drawing.Size(86, 32);
-            this.btnProjeTemizle.TabIndex = 9;
+            this.btnProjeTemizle.TabIndex = 1;
             this.btnProjeTemizle.Text = "Temizle";
             this.btnProjeTemizle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipProjeTemizle.SetToolTip(this.btnProjeTemizle, "Formu temizler");
@@ -239,7 +239,7 @@
             this.groupBox3.Location = new System.Drawing.Point(12, 123);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(672, 54);
-            this.groupBox3.TabIndex = 41;
+            this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Kayıt Bilgileri";
             // 
@@ -252,7 +252,7 @@
             this.lblProjeKullanici.Location = new System.Drawing.Point(5, 19);
             this.lblProjeKullanici.Name = "lblProjeKullanici";
             this.lblProjeKullanici.Size = new System.Drawing.Size(64, 22);
-            this.lblProjeKullanici.TabIndex = 38;
+            this.lblProjeKullanici.TabIndex = 1;
             this.lblProjeKullanici.Text = "Kullanıcı:";
             this.lblProjeKullanici.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -265,7 +265,7 @@
             this.lblProjeKayitNo.Location = new System.Drawing.Point(149, 19);
             this.lblProjeKayitNo.Name = "lblProjeKayitNo";
             this.lblProjeKayitNo.Size = new System.Drawing.Size(62, 22);
-            this.lblProjeKayitNo.TabIndex = 37;
+            this.lblProjeKayitNo.TabIndex = 3;
             this.lblProjeKayitNo.Text = "Kayıt No:";
             // 
             // lblProjeID
@@ -277,7 +277,7 @@
             this.lblProjeID.Location = new System.Drawing.Point(207, 19);
             this.lblProjeID.Name = "lblProjeID";
             this.lblProjeID.Size = new System.Drawing.Size(73, 22);
-            this.lblProjeID.TabIndex = 36;
+            this.lblProjeID.TabIndex = 4;
             this.lblProjeID.Text = "{ KayitNo }";
             // 
             // lblProjeKayitTarihi
@@ -289,7 +289,7 @@
             this.lblProjeKayitTarihi.Location = new System.Drawing.Point(359, 19);
             this.lblProjeKayitTarihi.Name = "lblProjeKayitTarihi";
             this.lblProjeKayitTarihi.Size = new System.Drawing.Size(80, 22);
-            this.lblProjeKayitTarihi.TabIndex = 30;
+            this.lblProjeKayitTarihi.TabIndex = 5;
             this.lblProjeKayitTarihi.Text = "Kayıt Tarihi:";
             // 
             // dtpProjeKayitTarihi
@@ -301,7 +301,7 @@
             this.dtpProjeKayitTarihi.MinDate = new System.DateTime(2015, 12, 1, 0, 0, 0, 0);
             this.dtpProjeKayitTarihi.Name = "dtpProjeKayitTarihi";
             this.dtpProjeKayitTarihi.Size = new System.Drawing.Size(201, 20);
-            this.dtpProjeKayitTarihi.TabIndex = 31;
+            this.dtpProjeKayitTarihi.TabIndex = 0;
             // 
             // lblProjeLoginfo
             // 
@@ -312,7 +312,7 @@
             this.lblProjeLoginfo.Location = new System.Drawing.Point(64, 19);
             this.lblProjeLoginfo.Name = "lblProjeLoginfo";
             this.lblProjeLoginfo.Size = new System.Drawing.Size(68, 22);
-            this.lblProjeLoginfo.TabIndex = 34;
+            this.lblProjeLoginfo.TabIndex = 2;
             this.lblProjeLoginfo.Text = "{ logInfo }";
             this.lblProjeLoginfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -338,16 +338,24 @@
             this.groupBox2.Location = new System.Drawing.Point(12, 183);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(672, 182);
-            this.groupBox2.TabIndex = 42;
+            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Proje Bilgileri";
+            // 
+            // txtProjeOzet
+            // 
+            this.txtProjeOzet.Location = new System.Drawing.Point(68, 50);
+            this.txtProjeOzet.Multiline = true;
+            this.txtProjeOzet.Name = "txtProjeOzet";
+            this.txtProjeOzet.Size = new System.Drawing.Size(598, 41);
+            this.txtProjeOzet.TabIndex = 1;
             // 
             // txtProjePartner
             // 
             this.txtProjePartner.Location = new System.Drawing.Point(67, 149);
             this.txtProjePartner.Name = "txtProjePartner";
             this.txtProjePartner.Size = new System.Drawing.Size(201, 20);
-            this.txtProjePartner.TabIndex = 41;
+            this.txtProjePartner.TabIndex = 6;
             // 
             // lblProjePartner
             // 
@@ -358,7 +366,7 @@
             this.lblProjePartner.Location = new System.Drawing.Point(5, 146);
             this.lblProjePartner.Name = "lblProjePartner";
             this.lblProjePartner.Size = new System.Drawing.Size(56, 22);
-            this.lblProjePartner.TabIndex = 40;
+            this.lblProjePartner.TabIndex = 12;
             this.lblProjePartner.Text = "Partner:";
             // 
             // txtProjeFonTutar
@@ -366,7 +374,7 @@
             this.txtProjeFonTutar.Location = new System.Drawing.Point(465, 123);
             this.txtProjeFonTutar.Name = "txtProjeFonTutar";
             this.txtProjeFonTutar.Size = new System.Drawing.Size(201, 20);
-            this.txtProjeFonTutar.TabIndex = 39;
+            this.txtProjeFonTutar.TabIndex = 5;
             // 
             // lblProjeFonTutar
             // 
@@ -377,7 +385,7 @@
             this.lblProjeFonTutar.Location = new System.Drawing.Point(334, 120);
             this.lblProjeFonTutar.Name = "lblProjeFonTutar";
             this.lblProjeFonTutar.Size = new System.Drawing.Size(70, 22);
-            this.lblProjeFonTutar.TabIndex = 38;
+            this.lblProjeFonTutar.TabIndex = 14;
             this.lblProjeFonTutar.Text = "Fon Tutarı:";
             // 
             // txtProjeFonOrg
@@ -385,7 +393,7 @@
             this.txtProjeFonOrg.Location = new System.Drawing.Point(68, 123);
             this.txtProjeFonOrg.Name = "txtProjeFonOrg";
             this.txtProjeFonOrg.Size = new System.Drawing.Size(200, 20);
-            this.txtProjeFonOrg.TabIndex = 37;
+            this.txtProjeFonOrg.TabIndex = 4;
             // 
             // lblProjeBaslik
             // 
@@ -396,7 +404,7 @@
             this.lblProjeBaslik.Location = new System.Drawing.Point(5, 19);
             this.lblProjeBaslik.Name = "lblProjeBaslik";
             this.lblProjeBaslik.Size = new System.Drawing.Size(49, 22);
-            this.lblProjeBaslik.TabIndex = 2;
+            this.lblProjeBaslik.TabIndex = 8;
             this.lblProjeBaslik.Text = "Başlık:";
             // 
             // lblProjeLokasyon
@@ -408,7 +416,7 @@
             this.lblProjeLokasyon.Location = new System.Drawing.Point(334, 146);
             this.lblProjeLokasyon.Name = "lblProjeLokasyon";
             this.lblProjeLokasyon.Size = new System.Drawing.Size(68, 22);
-            this.lblProjeLokasyon.TabIndex = 3;
+            this.lblProjeLokasyon.TabIndex = 15;
             this.lblProjeLokasyon.Text = "Lokasyon:";
             // 
             // lblProjeOzet
@@ -420,7 +428,7 @@
             this.lblProjeOzet.Location = new System.Drawing.Point(5, 47);
             this.lblProjeOzet.Name = "lblProjeOzet";
             this.lblProjeOzet.Size = new System.Drawing.Size(40, 22);
-            this.lblProjeOzet.TabIndex = 5;
+            this.lblProjeOzet.TabIndex = 9;
             this.lblProjeOzet.Text = "Özet:";
             // 
             // lblProjeSorumlu
@@ -432,7 +440,7 @@
             this.lblProjeSorumlu.Location = new System.Drawing.Point(5, 94);
             this.lblProjeSorumlu.Name = "lblProjeSorumlu";
             this.lblProjeSorumlu.Size = new System.Drawing.Size(60, 22);
-            this.lblProjeSorumlu.TabIndex = 6;
+            this.lblProjeSorumlu.TabIndex = 10;
             this.lblProjeSorumlu.Text = "Sorumlu:";
             // 
             // lblProjeSorumluIletisim
@@ -444,7 +452,7 @@
             this.lblProjeSorumluIletisim.Location = new System.Drawing.Point(334, 94);
             this.lblProjeSorumluIletisim.Name = "lblProjeSorumluIletisim";
             this.lblProjeSorumluIletisim.Size = new System.Drawing.Size(105, 22);
-            this.lblProjeSorumluIletisim.TabIndex = 7;
+            this.lblProjeSorumluIletisim.TabIndex = 13;
             this.lblProjeSorumluIletisim.Text = "Sorumlu İletişim:";
             // 
             // lblProjeFonOr
@@ -456,7 +464,7 @@
             this.lblProjeFonOr.Location = new System.Drawing.Point(5, 120);
             this.lblProjeFonOr.Name = "lblProjeFonOr";
             this.lblProjeFonOr.Size = new System.Drawing.Size(62, 22);
-            this.lblProjeFonOr.TabIndex = 9;
+            this.lblProjeFonOr.TabIndex = 11;
             this.lblProjeFonOr.Text = "Fon Org.:";
             // 
             // txtProjeBaslik
@@ -471,21 +479,21 @@
             this.txtProjeSorumlu.Location = new System.Drawing.Point(68, 97);
             this.txtProjeSorumlu.Name = "txtProjeSorumlu";
             this.txtProjeSorumlu.Size = new System.Drawing.Size(201, 20);
-            this.txtProjeSorumlu.TabIndex = 4;
+            this.txtProjeSorumlu.TabIndex = 2;
             // 
             // txtProjeSorumluIletisim
             // 
             this.txtProjeSorumluIletisim.Location = new System.Drawing.Point(465, 97);
             this.txtProjeSorumluIletisim.Name = "txtProjeSorumluIletisim";
             this.txtProjeSorumluIletisim.Size = new System.Drawing.Size(201, 20);
-            this.txtProjeSorumluIletisim.TabIndex = 5;
+            this.txtProjeSorumluIletisim.TabIndex = 3;
             // 
             // txtProjeLokasyon
             // 
             this.txtProjeLokasyon.Location = new System.Drawing.Point(465, 149);
             this.txtProjeLokasyon.Name = "txtProjeLokasyon";
             this.txtProjeLokasyon.Size = new System.Drawing.Size(201, 20);
-            this.txtProjeLokasyon.TabIndex = 1;
+            this.txtProjeLokasyon.TabIndex = 7;
             // 
             // cmsProje
             // 
@@ -496,6 +504,27 @@
             this.cmsProje.Name = "contextMenuStrip1";
             this.cmsProje.Size = new System.Drawing.Size(115, 70);
             // 
+            // cmsProjeItemYeni
+            // 
+            this.cmsProjeItemYeni.Name = "cmsProjeItemYeni";
+            this.cmsProjeItemYeni.Size = new System.Drawing.Size(114, 22);
+            this.cmsProjeItemYeni.Text = "Yeni";
+            this.cmsProjeItemYeni.Click += new System.EventHandler(this.cmsProjeItemYeni_Click);
+            // 
+            // cmsProjeItemTemizle
+            // 
+            this.cmsProjeItemTemizle.Name = "cmsProjeItemTemizle";
+            this.cmsProjeItemTemizle.Size = new System.Drawing.Size(114, 22);
+            this.cmsProjeItemTemizle.Text = "Temizle";
+            this.cmsProjeItemTemizle.Click += new System.EventHandler(this.cmsProjeItemTemizle_Click);
+            // 
+            // cmsProjeItemYenile
+            // 
+            this.cmsProjeItemYenile.Name = "cmsProjeItemYenile";
+            this.cmsProjeItemYenile.Size = new System.Drawing.Size(114, 22);
+            this.cmsProjeItemYenile.Text = "Yenile";
+            this.cmsProjeItemYenile.Click += new System.EventHandler(this.cmsProjeItemYenile_Click);
+            // 
             // dgvProje
             // 
             this.dgvProje.AllowUserToAddRows = false;
@@ -505,7 +534,7 @@
             this.dgvProje.Name = "dgvProje";
             this.dgvProje.ReadOnly = true;
             this.dgvProje.Size = new System.Drawing.Size(672, 239);
-            this.dgvProje.TabIndex = 44;
+            this.dgvProje.TabIndex = 7;
             this.dgvProje.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProje_CellContentClick);
             // 
             // picProjeDrive
@@ -528,7 +557,7 @@
             this.btnProjeYenile.Location = new System.Drawing.Point(605, 616);
             this.btnProjeYenile.Name = "btnProjeYenile";
             this.btnProjeYenile.Size = new System.Drawing.Size(79, 32);
-            this.btnProjeYenile.TabIndex = 45;
+            this.btnProjeYenile.TabIndex = 3;
             this.btnProjeYenile.Text = "Yenile";
             this.btnProjeYenile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipProjeYenile.SetToolTip(this.btnProjeYenile, "Veritabanını yeniler");
@@ -543,7 +572,7 @@
             this.btnProjePano.Location = new System.Drawing.Point(46, 616);
             this.btnProjePano.Name = "btnProjePano";
             this.btnProjePano.Size = new System.Drawing.Size(102, 32);
-            this.btnProjePano.TabIndex = 49;
+            this.btnProjePano.TabIndex = 6;
             this.btnProjePano.Text = "Panoya Geri dön!";
             this.btnProjePano.UseVisualStyleBackColor = false;
             this.btnProjePano.Click += new System.EventHandler(this.btnProjePano_Click);
@@ -565,7 +594,7 @@
             this.btnProjeEposta.Location = new System.Drawing.Point(401, 616);
             this.btnProjeEposta.Name = "btnProjeEposta";
             this.btnProjeEposta.Size = new System.Drawing.Size(96, 32);
-            this.btnProjeEposta.TabIndex = 47;
+            this.btnProjeEposta.TabIndex = 5;
             this.btnProjeEposta.Text = "ePosta Gönder";
             this.btnProjeEposta.UseVisualStyleBackColor = false;
             // 
@@ -577,35 +606,9 @@
             this.btnProjeExcel.Location = new System.Drawing.Point(503, 616);
             this.btnProjeExcel.Name = "btnProjeExcel";
             this.btnProjeExcel.Size = new System.Drawing.Size(96, 32);
-            this.btnProjeExcel.TabIndex = 46;
+            this.btnProjeExcel.TabIndex = 4;
             this.btnProjeExcel.Text = "Excel\'e Çıkar";
             this.btnProjeExcel.UseVisualStyleBackColor = false;
-            // 
-            // cmsProjeItemYeni
-            // 
-            this.cmsProjeItemYeni.Name = "cmsProjeItemYeni";
-            this.cmsProjeItemYeni.Size = new System.Drawing.Size(114, 22);
-            this.cmsProjeItemYeni.Text = "Yeni";
-            // 
-            // cmsProjeItemTemizle
-            // 
-            this.cmsProjeItemTemizle.Name = "cmsProjeItemTemizle";
-            this.cmsProjeItemTemizle.Size = new System.Drawing.Size(114, 22);
-            this.cmsProjeItemTemizle.Text = "Temizle";
-            // 
-            // cmsProjeItemYenile
-            // 
-            this.cmsProjeItemYenile.Name = "cmsProjeItemYenile";
-            this.cmsProjeItemYenile.Size = new System.Drawing.Size(114, 22);
-            this.cmsProjeItemYenile.Text = "Yenile";
-            // 
-            // txtProjeOzet
-            // 
-            this.txtProjeOzet.Location = new System.Drawing.Point(68, 50);
-            this.txtProjeOzet.Multiline = true;
-            this.txtProjeOzet.Name = "txtProjeOzet";
-            this.txtProjeOzet.Size = new System.Drawing.Size(598, 41);
-            this.txtProjeOzet.TabIndex = 42;
             // 
             // proje
             // 

@@ -65,7 +65,8 @@
             this.btnGirisLogin.Location = new System.Drawing.Point(232, 122);
             this.btnGirisLogin.Name = "btnGirisLogin";
             this.btnGirisLogin.Size = new System.Drawing.Size(125, 35);
-            this.btnGirisLogin.TabIndex = 4;
+            this.btnGirisLogin.TabIndex = 2;
+            this.btnGirisLogin.TabStop = false;
             this.btnGirisLogin.Text = "Giriş Yap";
             this.btnGirisLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGirisLogin.UseVisualStyleBackColor = false;
@@ -78,14 +79,14 @@
             this.txtGirisSifre.Name = "txtGirisSifre";
             this.txtGirisSifre.PasswordChar = '*';
             this.txtGirisSifre.Size = new System.Drawing.Size(125, 24);
-            this.txtGirisSifre.TabIndex = 3;
+            this.txtGirisSifre.TabIndex = 1;
             // 
             // txtGirisKullanici
             // 
             this.txtGirisKullanici.Location = new System.Drawing.Point(232, 51);
             this.txtGirisKullanici.Name = "txtGirisKullanici";
             this.txtGirisKullanici.Size = new System.Drawing.Size(125, 24);
-            this.txtGirisKullanici.TabIndex = 2;
+            this.txtGirisKullanici.TabIndex = 0;
             // 
             // lblGirisSifre
             // 
@@ -95,7 +96,7 @@
             this.lblGirisSifre.Location = new System.Drawing.Point(91, 77);
             this.lblGirisSifre.Name = "lblGirisSifre";
             this.lblGirisSifre.Size = new System.Drawing.Size(48, 24);
-            this.lblGirisSifre.TabIndex = 1;
+            this.lblGirisSifre.TabIndex = 4;
             this.lblGirisSifre.Text = "Şifre: ";
             // 
             // lblGirisKullanici
@@ -106,7 +107,7 @@
             this.lblGirisKullanici.Location = new System.Drawing.Point(91, 51);
             this.lblGirisKullanici.Name = "lblGirisKullanici";
             this.lblGirisKullanici.Size = new System.Drawing.Size(98, 24);
-            this.lblGirisKullanici.TabIndex = 0;
+            this.lblGirisKullanici.TabIndex = 3;
             this.lblGirisKullanici.Text = "Kullanıcı Adı: ";
             // 
             // lblGirisWww
@@ -117,7 +118,7 @@
             this.lblGirisWww.Location = new System.Drawing.Point(12, 214);
             this.lblGirisWww.Name = "lblGirisWww";
             this.lblGirisWww.Size = new System.Drawing.Size(117, 19);
-            this.lblGirisWww.TabIndex = 5;
+            this.lblGirisWww.TabIndex = 2;
             this.lblGirisWww.Text = "www.doguakdeniz.org";
             // 
             // lblGirisAt
@@ -128,7 +129,7 @@
             this.lblGirisAt.Location = new System.Drawing.Point(253, 214);
             this.lblGirisAt.Name = "lblGirisAt";
             this.lblGirisAt.Size = new System.Drawing.Size(183, 19);
-            this.lblGirisAt.TabIndex = 6;
+            this.lblGirisAt.TabIndex = 1;
             this.lblGirisAt.Text = "doguakdenizarastirma@gmail.com";
             // 
             // giris
@@ -143,7 +144,6 @@
             this.Name = "giris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş : Doğu Akdeniz Araştırma Derneği";
-            this.Enter += new System.EventHandler(this.btnGirisLogin_Click);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

@@ -181,5 +181,22 @@ namespace doguAkdenizApp
             browser tarayici = new browser();
             tarayici.ShowDialog();
         }
+
+        private void cmsProjeItemYeni_Click(object sender, EventArgs e)
+        {
+            clearAllText();
+            loadTable();
+        }
+
+        private void cmsProjeItemTemizle_Click(object sender, EventArgs e)
+        {
+            clearAllText();
+            loadTable();
+        }
+
+        private void cmsProjeItemYenile_Click(object sender, EventArgs e)
+        {
+            loadTable();
+        }
     }
 }

@@ -102,7 +102,7 @@
             this.dgvEkip.Name = "dgvEkip";
             this.dgvEkip.ReadOnly = true;
             this.dgvEkip.Size = new System.Drawing.Size(672, 239);
-            this.dgvEkip.TabIndex = 20;
+            this.dgvEkip.TabIndex = 7;
             this.dgvEkip.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEkip_CellContentClick);
             // 
             // groupBox1
@@ -119,7 +119,7 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(672, 105);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ekip Kaydı Olustur";
             // 
@@ -133,7 +133,7 @@
             this.btnEkipGuncelle.Location = new System.Drawing.Point(153, 57);
             this.btnEkipGuncelle.Name = "btnEkipGuncelle";
             this.btnEkipGuncelle.Size = new System.Drawing.Size(86, 32);
-            this.btnEkipGuncelle.TabIndex = 12;
+            this.btnEkipGuncelle.TabIndex = 3;
             this.btnEkipGuncelle.Text = "Düzenle";
             this.btnEkipGuncelle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipEkipDuzenle.SetToolTip(this.btnEkipGuncelle, "Seçili kaydı veritabanında gunceller");
@@ -145,7 +145,7 @@
             this.txtEkipAra.Location = new System.Drawing.Point(471, 27);
             this.txtEkipAra.Name = "txtEkipAra";
             this.txtEkipAra.Size = new System.Drawing.Size(195, 20);
-            this.txtEkipAra.TabIndex = 14;
+            this.txtEkipAra.TabIndex = 5;
             // 
             // pictureBox1
             // 
@@ -166,7 +166,7 @@
             this.btnEkipAra.Location = new System.Drawing.Point(586, 57);
             this.btnEkipAra.Name = "btnEkipAra";
             this.btnEkipAra.Size = new System.Drawing.Size(80, 32);
-            this.btnEkipAra.TabIndex = 15;
+            this.btnEkipAra.TabIndex = 6;
             this.btnEkipAra.Text = "Ara";
             this.btnEkipAra.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipEkipAra.SetToolTip(this.btnEkipAra, "Veritabanında arama yapar");
@@ -183,7 +183,7 @@
             this.btnEkipYeni.Location = new System.Drawing.Point(85, 19);
             this.btnEkipYeni.Name = "btnEkipYeni";
             this.btnEkipYeni.Size = new System.Drawing.Size(62, 32);
-            this.btnEkipYeni.TabIndex = 8;
+            this.btnEkipYeni.TabIndex = 0;
             this.btnEkipYeni.Text = "Yeni";
             this.btnEkipYeni.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipEkipYeni.SetToolTip(this.btnEkipYeni, "Yeni bir form açar");
@@ -200,7 +200,7 @@
             this.btnEkipKaydet.Location = new System.Drawing.Point(245, 57);
             this.btnEkipKaydet.Name = "btnEkipKaydet";
             this.btnEkipKaydet.Size = new System.Drawing.Size(85, 32);
-            this.btnEkipKaydet.TabIndex = 13;
+            this.btnEkipKaydet.TabIndex = 4;
             this.btnEkipKaydet.Text = "Kaydet";
             this.btnEkipKaydet.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipEkipKaydet.SetToolTip(this.btnEkipKaydet, "Formda yer alan bilgileri veritabanına kaydeder");
@@ -217,7 +217,7 @@
             this.btnEkipSil.Location = new System.Drawing.Point(85, 57);
             this.btnEkipSil.Name = "btnEkipSil";
             this.btnEkipSil.Size = new System.Drawing.Size(62, 32);
-            this.btnEkipSil.TabIndex = 11;
+            this.btnEkipSil.TabIndex = 2;
             this.btnEkipSil.Text = "Sil";
             this.btnEkipSil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipEkipSil.SetToolTip(this.btnEkipSil, "Seçili kaydı veritabanından siler");
@@ -234,7 +234,7 @@
             this.btnEkipTemizle.Location = new System.Drawing.Point(153, 20);
             this.btnEkipTemizle.Name = "btnEkipTemizle";
             this.btnEkipTemizle.Size = new System.Drawing.Size(86, 32);
-            this.btnEkipTemizle.TabIndex = 9;
+            this.btnEkipTemizle.TabIndex = 1;
             this.btnEkipTemizle.Text = "Temizle";
             this.btnEkipTemizle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipEkipTemizle.SetToolTip(this.btnEkipTemizle, "Formu temizler");
@@ -250,7 +250,7 @@
             this.lblEkipIsim.Location = new System.Drawing.Point(5, 19);
             this.lblEkipIsim.Name = "lblEkipIsim";
             this.lblEkipIsim.Size = new System.Drawing.Size(40, 22);
-            this.lblEkipIsim.TabIndex = 2;
+            this.lblEkipIsim.TabIndex = 9;
             this.lblEkipIsim.Text = "İsim: ";
             // 
             // lblEkipSoyisim
@@ -262,7 +262,7 @@
             this.lblEkipSoyisim.Location = new System.Drawing.Point(371, 21);
             this.lblEkipSoyisim.Name = "lblEkipSoyisim";
             this.lblEkipSoyisim.Size = new System.Drawing.Size(61, 22);
-            this.lblEkipSoyisim.TabIndex = 3;
+            this.lblEkipSoyisim.TabIndex = 10;
             this.lblEkipSoyisim.Text = "Soyisim: ";
             // 
             // lblEkipDogum
@@ -274,7 +274,7 @@
             this.lblEkipDogum.Location = new System.Drawing.Point(371, 44);
             this.lblEkipDogum.Name = "lblEkipDogum";
             this.lblEkipDogum.Size = new System.Drawing.Size(92, 22);
-            this.lblEkipDogum.TabIndex = 4;
+            this.lblEkipDogum.TabIndex = 12;
             this.lblEkipDogum.Text = "Dogum Tarihi: ";
             // 
             // lblEkipTc
@@ -286,7 +286,7 @@
             this.lblEkipTc.Location = new System.Drawing.Point(3, 47);
             this.lblEkipTc.Name = "lblEkipTc";
             this.lblEkipTc.Size = new System.Drawing.Size(48, 22);
-            this.lblEkipTc.TabIndex = 5;
+            this.lblEkipTc.TabIndex = 11;
             this.lblEkipTc.Text = "TC No: ";
             // 
             // lblEkipTelefon
@@ -298,7 +298,7 @@
             this.lblEkipTelefon.Location = new System.Drawing.Point(3, 73);
             this.lblEkipTelefon.Name = "lblEkipTelefon";
             this.lblEkipTelefon.Size = new System.Drawing.Size(59, 22);
-            this.lblEkipTelefon.TabIndex = 6;
+            this.lblEkipTelefon.TabIndex = 13;
             this.lblEkipTelefon.Text = "Telefon: ";
             // 
             // lblEkipEposta
@@ -310,7 +310,7 @@
             this.lblEkipEposta.Location = new System.Drawing.Point(371, 71);
             this.lblEkipEposta.Name = "lblEkipEposta";
             this.lblEkipEposta.Size = new System.Drawing.Size(55, 22);
-            this.lblEkipEposta.TabIndex = 7;
+            this.lblEkipEposta.TabIndex = 14;
             this.lblEkipEposta.Text = "ePosta: ";
             // 
             // lblEkipAdres
@@ -322,7 +322,7 @@
             this.lblEkipAdres.Location = new System.Drawing.Point(371, 97);
             this.lblEkipAdres.Name = "lblEkipAdres";
             this.lblEkipAdres.Size = new System.Drawing.Size(50, 22);
-            this.lblEkipAdres.TabIndex = 8;
+            this.lblEkipAdres.TabIndex = 16;
             this.lblEkipAdres.Text = "Adres: ";
             // 
             // lblEkipSehir
@@ -334,7 +334,7 @@
             this.lblEkipSehir.Location = new System.Drawing.Point(3, 99);
             this.lblEkipSehir.Name = "lblEkipSehir";
             this.lblEkipSehir.Size = new System.Drawing.Size(46, 22);
-            this.lblEkipSehir.TabIndex = 9;
+            this.lblEkipSehir.TabIndex = 15;
             this.lblEkipSehir.Text = "Şehir: ";
             // 
             // txtEkipIsim
@@ -389,7 +389,7 @@
             this.btnEkipExcel.Location = new System.Drawing.Point(503, 588);
             this.btnEkipExcel.Name = "btnEkipExcel";
             this.btnEkipExcel.Size = new System.Drawing.Size(96, 32);
-            this.btnEkipExcel.TabIndex = 25;
+            this.btnEkipExcel.TabIndex = 4;
             this.btnEkipExcel.Text = "Excel\'e Çıkar";
             this.btnEkipExcel.UseVisualStyleBackColor = false;
             this.btnEkipExcel.Click += new System.EventHandler(this.btnEkipExcel_Click);
@@ -402,7 +402,7 @@
             this.btnEkipEposta.Location = new System.Drawing.Point(401, 588);
             this.btnEkipEposta.Name = "btnEkipEposta";
             this.btnEkipEposta.Size = new System.Drawing.Size(96, 32);
-            this.btnEkipEposta.TabIndex = 26;
+            this.btnEkipEposta.TabIndex = 5;
             this.btnEkipEposta.Text = "ePosta Gönder";
             this.btnEkipEposta.UseVisualStyleBackColor = false;
             // 
@@ -414,7 +414,7 @@
             this.btnEkipPano.Location = new System.Drawing.Point(46, 588);
             this.btnEkipPano.Name = "btnEkipPano";
             this.btnEkipPano.Size = new System.Drawing.Size(102, 32);
-            this.btnEkipPano.TabIndex = 29;
+            this.btnEkipPano.TabIndex = 6;
             this.btnEkipPano.Text = "Panoya Geri dön!";
             this.btnEkipPano.UseVisualStyleBackColor = false;
             this.btnEkipPano.Click += new System.EventHandler(this.btnEkipPano_Click);
@@ -428,7 +428,7 @@
             this.lblEkipKayitTarihi.Location = new System.Drawing.Point(371, 19);
             this.lblEkipKayitTarihi.Name = "lblEkipKayitTarihi";
             this.lblEkipKayitTarihi.Size = new System.Drawing.Size(80, 22);
-            this.lblEkipKayitTarihi.TabIndex = 30;
+            this.lblEkipKayitTarihi.TabIndex = 5;
             this.lblEkipKayitTarihi.Text = "Kayıt Tarihi:";
             // 
             // dtpEkipKayitTarihi
@@ -440,7 +440,7 @@
             this.dtpEkipKayitTarihi.MinDate = new System.DateTime(2015, 12, 1, 0, 0, 0, 0);
             this.dtpEkipKayitTarihi.Name = "dtpEkipKayitTarihi";
             this.dtpEkipKayitTarihi.Size = new System.Drawing.Size(201, 20);
-            this.dtpEkipKayitTarihi.TabIndex = 31;
+            this.dtpEkipKayitTarihi.TabIndex = 0;
             // 
             // dtpEkipDogum
             // 
@@ -451,7 +451,7 @@
             this.dtpEkipDogum.MinDate = new System.DateTime(1910, 1, 1, 0, 0, 0, 0);
             this.dtpEkipDogum.Name = "dtpEkipDogum";
             this.dtpEkipDogum.Size = new System.Drawing.Size(201, 20);
-            this.dtpEkipDogum.TabIndex = 32;
+            this.dtpEkipDogum.TabIndex = 3;
             this.dtpEkipDogum.Value = new System.DateTime(1999, 12, 31, 0, 0, 0, 0);
             // 
             // cbEkipSehir
@@ -545,7 +545,7 @@
             this.cbEkipSehir.Location = new System.Drawing.Point(68, 99);
             this.cbEkipSehir.Name = "cbEkipSehir";
             this.cbEkipSehir.Size = new System.Drawing.Size(201, 20);
-            this.cbEkipSehir.TabIndex = 33;
+            this.cbEkipSehir.TabIndex = 6;
             this.cbEkipSehir.Text = "Lütfen listeden şehir seçimi yapınız.";
             // 
             // lblEkipLoginfo
@@ -557,7 +557,7 @@
             this.lblEkipLoginfo.Location = new System.Drawing.Point(64, 19);
             this.lblEkipLoginfo.Name = "lblEkipLoginfo";
             this.lblEkipLoginfo.Size = new System.Drawing.Size(68, 22);
-            this.lblEkipLoginfo.TabIndex = 34;
+            this.lblEkipLoginfo.TabIndex = 2;
             this.lblEkipLoginfo.Text = "{ logInfo }";
             this.lblEkipLoginfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -582,7 +582,7 @@
             this.btnEkipYenile.Location = new System.Drawing.Point(605, 588);
             this.btnEkipYenile.Name = "btnEkipYenile";
             this.btnEkipYenile.Size = new System.Drawing.Size(79, 32);
-            this.btnEkipYenile.TabIndex = 10;
+            this.btnEkipYenile.TabIndex = 3;
             this.btnEkipYenile.Text = "Yenile";
             this.btnEkipYenile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipEkipYenile.SetToolTip(this.btnEkipYenile, "Veritabanını yeniler");
@@ -637,7 +637,7 @@
             this.lblEkipID.Location = new System.Drawing.Point(207, 19);
             this.lblEkipID.Name = "lblEkipID";
             this.lblEkipID.Size = new System.Drawing.Size(73, 22);
-            this.lblEkipID.TabIndex = 36;
+            this.lblEkipID.TabIndex = 4;
             this.lblEkipID.Text = "{ KayitNo }";
             // 
             // lblEkipKayitNo
@@ -649,7 +649,7 @@
             this.lblEkipKayitNo.Location = new System.Drawing.Point(149, 19);
             this.lblEkipKayitNo.Name = "lblEkipKayitNo";
             this.lblEkipKayitNo.Size = new System.Drawing.Size(62, 22);
-            this.lblEkipKayitNo.TabIndex = 37;
+            this.lblEkipKayitNo.TabIndex = 3;
             this.lblEkipKayitNo.Text = "Kayıt No:";
             // 
             // groupBox2
@@ -676,7 +676,7 @@
             this.groupBox2.Location = new System.Drawing.Point(12, 183);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(672, 154);
-            this.groupBox2.TabIndex = 38;
+            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Kişi Bilgileri";
             // 
@@ -697,7 +697,7 @@
             this.cbEkipGorev.Location = new System.Drawing.Point(68, 125);
             this.cbEkipGorev.Name = "cbEkipGorev";
             this.cbEkipGorev.Size = new System.Drawing.Size(201, 20);
-            this.cbEkipGorev.TabIndex = 35;
+            this.cbEkipGorev.TabIndex = 8;
             this.cbEkipGorev.Text = "Lütfen listeden görev seçimi yapınız.";
             // 
             // label1
@@ -709,7 +709,7 @@
             this.label1.Location = new System.Drawing.Point(3, 125);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 22);
-            this.label1.TabIndex = 34;
+            this.label1.TabIndex = 17;
             this.label1.Text = "Görevi:";
             // 
             // groupBox3
@@ -724,7 +724,7 @@
             this.groupBox3.Location = new System.Drawing.Point(12, 123);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(672, 54);
-            this.groupBox3.TabIndex = 39;
+            this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Kayıt Bilgileri";
             // 
@@ -737,7 +737,7 @@
             this.lblEkipKullanici.Location = new System.Drawing.Point(5, 19);
             this.lblEkipKullanici.Name = "lblEkipKullanici";
             this.lblEkipKullanici.Size = new System.Drawing.Size(64, 22);
-            this.lblEkipKullanici.TabIndex = 38;
+            this.lblEkipKullanici.TabIndex = 1;
             this.lblEkipKullanici.Text = "Kullanıcı:";
             this.lblEkipKullanici.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 

@@ -46,6 +46,7 @@
             this.dtpAidatKayitTarihi = new System.Windows.Forms.DateTimePicker();
             this.lblAidatLoginfo = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbAidatCins = new System.Windows.Forms.ComboBox();
             this.lblAidatIsim = new System.Windows.Forms.Label();
             this.lblAidatSoyisim = new System.Windows.Forms.Label();
             this.lblAidatTutar = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.txtAidatIsim = new System.Windows.Forms.TextBox();
             this.txtAidatTutar = new System.Windows.Forms.TextBox();
             this.txtAidatSoyisim = new System.Windows.Forms.TextBox();
-            this.cbAidatCins = new System.Windows.Forms.ComboBox();
             this.dgvAidat = new System.Windows.Forms.DataGridView();
             this.picAidatDrive = new System.Windows.Forms.PictureBox();
             this.btnAidatYenile = new System.Windows.Forms.Button();
@@ -97,7 +97,7 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(672, 105);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Aidat Kaydı Olustur";
             // 
@@ -111,7 +111,7 @@
             this.btnAidatGuncelle.Location = new System.Drawing.Point(153, 57);
             this.btnAidatGuncelle.Name = "btnAidatGuncelle";
             this.btnAidatGuncelle.Size = new System.Drawing.Size(86, 32);
-            this.btnAidatGuncelle.TabIndex = 12;
+            this.btnAidatGuncelle.TabIndex = 3;
             this.btnAidatGuncelle.Text = "Düzenle";
             this.btnAidatGuncelle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipUyeDuzenle.SetToolTip(this.btnAidatGuncelle, "Seçili kaydı veritabanında gunceller");
@@ -123,7 +123,7 @@
             this.txtAidatAra.Location = new System.Drawing.Point(471, 27);
             this.txtAidatAra.Name = "txtAidatAra";
             this.txtAidatAra.Size = new System.Drawing.Size(195, 20);
-            this.txtAidatAra.TabIndex = 14;
+            this.txtAidatAra.TabIndex = 5;
             // 
             // pictureBox1
             // 
@@ -144,7 +144,7 @@
             this.btnAidatAra.Location = new System.Drawing.Point(586, 57);
             this.btnAidatAra.Name = "btnAidatAra";
             this.btnAidatAra.Size = new System.Drawing.Size(80, 32);
-            this.btnAidatAra.TabIndex = 15;
+            this.btnAidatAra.TabIndex = 6;
             this.btnAidatAra.Text = "Ara";
             this.btnAidatAra.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipAidatAra.SetToolTip(this.btnAidatAra, "Veritabanında arama yapar");
@@ -161,7 +161,7 @@
             this.btnAidatYeni.Location = new System.Drawing.Point(85, 19);
             this.btnAidatYeni.Name = "btnAidatYeni";
             this.btnAidatYeni.Size = new System.Drawing.Size(62, 32);
-            this.btnAidatYeni.TabIndex = 8;
+            this.btnAidatYeni.TabIndex = 0;
             this.btnAidatYeni.Text = "Yeni";
             this.btnAidatYeni.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipAidatYeni.SetToolTip(this.btnAidatYeni, "Yeni bir form açar");
@@ -178,7 +178,7 @@
             this.btnAidatKaydet.Location = new System.Drawing.Point(245, 57);
             this.btnAidatKaydet.Name = "btnAidatKaydet";
             this.btnAidatKaydet.Size = new System.Drawing.Size(85, 32);
-            this.btnAidatKaydet.TabIndex = 13;
+            this.btnAidatKaydet.TabIndex = 4;
             this.btnAidatKaydet.Text = "Kaydet";
             this.btnAidatKaydet.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipUyeKaydet.SetToolTip(this.btnAidatKaydet, "Formda yer alan bilgileri veritabanına kaydeder");
@@ -195,7 +195,7 @@
             this.btnAidatSil.Location = new System.Drawing.Point(85, 57);
             this.btnAidatSil.Name = "btnAidatSil";
             this.btnAidatSil.Size = new System.Drawing.Size(62, 32);
-            this.btnAidatSil.TabIndex = 11;
+            this.btnAidatSil.TabIndex = 2;
             this.btnAidatSil.Text = "Sil";
             this.btnAidatSil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipAidatSil.SetToolTip(this.btnAidatSil, "Seçili kaydı veritabanından siler");
@@ -212,7 +212,7 @@
             this.btnAidatTemizle.Location = new System.Drawing.Point(153, 20);
             this.btnAidatTemizle.Name = "btnAidatTemizle";
             this.btnAidatTemizle.Size = new System.Drawing.Size(86, 32);
-            this.btnAidatTemizle.TabIndex = 9;
+            this.btnAidatTemizle.TabIndex = 1;
             this.btnAidatTemizle.Text = "Temizle";
             this.btnAidatTemizle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipAidatTemizle.SetToolTip(this.btnAidatTemizle, "Formu temizler");
@@ -231,7 +231,7 @@
             this.groupBox3.Location = new System.Drawing.Point(12, 123);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(672, 54);
-            this.groupBox3.TabIndex = 40;
+            this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Kayıt Bilgileri";
             // 
@@ -244,7 +244,7 @@
             this.lblAidatKullanici.Location = new System.Drawing.Point(5, 19);
             this.lblAidatKullanici.Name = "lblAidatKullanici";
             this.lblAidatKullanici.Size = new System.Drawing.Size(64, 22);
-            this.lblAidatKullanici.TabIndex = 38;
+            this.lblAidatKullanici.TabIndex = 2;
             this.lblAidatKullanici.Text = "Kullanıcı:";
             this.lblAidatKullanici.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -257,7 +257,7 @@
             this.lblAidatKayitNo.Location = new System.Drawing.Point(149, 19);
             this.lblAidatKayitNo.Name = "lblAidatKayitNo";
             this.lblAidatKayitNo.Size = new System.Drawing.Size(62, 22);
-            this.lblAidatKayitNo.TabIndex = 37;
+            this.lblAidatKayitNo.TabIndex = 4;
             this.lblAidatKayitNo.Text = "Kayıt No:";
             // 
             // lblAidatID
@@ -269,7 +269,7 @@
             this.lblAidatID.Location = new System.Drawing.Point(207, 19);
             this.lblAidatID.Name = "lblAidatID";
             this.lblAidatID.Size = new System.Drawing.Size(73, 22);
-            this.lblAidatID.TabIndex = 36;
+            this.lblAidatID.TabIndex = 5;
             this.lblAidatID.Text = "{ KayitNo }";
             // 
             // lblAidatKayitTarihi
@@ -281,7 +281,7 @@
             this.lblAidatKayitTarihi.Location = new System.Drawing.Point(371, 19);
             this.lblAidatKayitTarihi.Name = "lblAidatKayitTarihi";
             this.lblAidatKayitTarihi.Size = new System.Drawing.Size(80, 22);
-            this.lblAidatKayitTarihi.TabIndex = 30;
+            this.lblAidatKayitTarihi.TabIndex = 5;
             this.lblAidatKayitTarihi.Text = "Kayıt Tarihi:";
             // 
             // dtpAidatKayitTarihi
@@ -293,7 +293,7 @@
             this.dtpAidatKayitTarihi.MinDate = new System.DateTime(2015, 12, 1, 0, 0, 0, 0);
             this.dtpAidatKayitTarihi.Name = "dtpAidatKayitTarihi";
             this.dtpAidatKayitTarihi.Size = new System.Drawing.Size(201, 20);
-            this.dtpAidatKayitTarihi.TabIndex = 31;
+            this.dtpAidatKayitTarihi.TabIndex = 0;
             // 
             // lblAidatLoginfo
             // 
@@ -304,7 +304,7 @@
             this.lblAidatLoginfo.Location = new System.Drawing.Point(64, 19);
             this.lblAidatLoginfo.Name = "lblAidatLoginfo";
             this.lblAidatLoginfo.Size = new System.Drawing.Size(68, 22);
-            this.lblAidatLoginfo.TabIndex = 34;
+            this.lblAidatLoginfo.TabIndex = 3;
             this.lblAidatLoginfo.Text = "{ logInfo }";
             this.lblAidatLoginfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -322,9 +322,25 @@
             this.groupBox2.Location = new System.Drawing.Point(12, 183);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(672, 87);
-            this.groupBox2.TabIndex = 41;
+            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ödeme Bilgileri";
+            // 
+            // cbAidatCins
+            // 
+            this.cbAidatCins.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.cbAidatCins.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbAidatCins.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbAidatCins.FormattingEnabled = true;
+            this.cbAidatCins.Items.AddRange(new object[] {
+            "TL",
+            "Euro",
+            "Dolar"});
+            this.cbAidatCins.Location = new System.Drawing.Point(465, 47);
+            this.cbAidatCins.Name = "cbAidatCins";
+            this.cbAidatCins.Size = new System.Drawing.Size(201, 20);
+            this.cbAidatCins.TabIndex = 3;
+            this.cbAidatCins.Text = "Lütfen listeden para birimi seçimi yapınız.";
             // 
             // lblAidatIsim
             // 
@@ -335,7 +351,7 @@
             this.lblAidatIsim.Location = new System.Drawing.Point(5, 19);
             this.lblAidatIsim.Name = "lblAidatIsim";
             this.lblAidatIsim.Size = new System.Drawing.Size(40, 22);
-            this.lblAidatIsim.TabIndex = 2;
+            this.lblAidatIsim.TabIndex = 4;
             this.lblAidatIsim.Text = "İsim: ";
             // 
             // lblAidatSoyisim
@@ -347,7 +363,7 @@
             this.lblAidatSoyisim.Location = new System.Drawing.Point(371, 21);
             this.lblAidatSoyisim.Name = "lblAidatSoyisim";
             this.lblAidatSoyisim.Size = new System.Drawing.Size(61, 22);
-            this.lblAidatSoyisim.TabIndex = 3;
+            this.lblAidatSoyisim.TabIndex = 5;
             this.lblAidatSoyisim.Text = "Soyisim: ";
             // 
             // lblAidatTutar
@@ -359,7 +375,7 @@
             this.lblAidatTutar.Location = new System.Drawing.Point(3, 47);
             this.lblAidatTutar.Name = "lblAidatTutar";
             this.lblAidatTutar.Size = new System.Drawing.Size(43, 22);
-            this.lblAidatTutar.TabIndex = 5;
+            this.lblAidatTutar.TabIndex = 6;
             this.lblAidatTutar.Text = "Tutar:";
             // 
             // lblAidatCins
@@ -371,7 +387,7 @@
             this.lblAidatCins.Location = new System.Drawing.Point(371, 47);
             this.lblAidatCins.Name = "lblAidatCins";
             this.lblAidatCins.Size = new System.Drawing.Size(77, 22);
-            this.lblAidatCins.TabIndex = 6;
+            this.lblAidatCins.TabIndex = 7;
             this.lblAidatCins.Text = "Para Birimi:";
             // 
             // txtAidatIsim
@@ -395,22 +411,6 @@
             this.txtAidatSoyisim.Size = new System.Drawing.Size(201, 20);
             this.txtAidatSoyisim.TabIndex = 1;
             // 
-            // cbAidatCins
-            // 
-            this.cbAidatCins.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-            this.cbAidatCins.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbAidatCins.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbAidatCins.FormattingEnabled = true;
-            this.cbAidatCins.Items.AddRange(new object[] {
-            "TL",
-            "Euro",
-            "Dolar"});
-            this.cbAidatCins.Location = new System.Drawing.Point(465, 47);
-            this.cbAidatCins.Name = "cbAidatCins";
-            this.cbAidatCins.Size = new System.Drawing.Size(201, 20);
-            this.cbAidatCins.TabIndex = 42;
-            this.cbAidatCins.Text = "Lütfen listeden para birimi seçimi yapınız.";
-            // 
             // dgvAidat
             // 
             this.dgvAidat.AllowUserToAddRows = false;
@@ -420,7 +420,7 @@
             this.dgvAidat.Name = "dgvAidat";
             this.dgvAidat.ReadOnly = true;
             this.dgvAidat.Size = new System.Drawing.Size(672, 239);
-            this.dgvAidat.TabIndex = 42;
+            this.dgvAidat.TabIndex = 7;
             this.dgvAidat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAidat_CellContentClick);
             // 
             // picAidatDrive
@@ -444,7 +444,7 @@
             this.btnAidatYenile.Location = new System.Drawing.Point(605, 521);
             this.btnAidatYenile.Name = "btnAidatYenile";
             this.btnAidatYenile.Size = new System.Drawing.Size(79, 32);
-            this.btnAidatYenile.TabIndex = 43;
+            this.btnAidatYenile.TabIndex = 3;
             this.btnAidatYenile.Text = "Yenile";
             this.btnAidatYenile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipAidatYenile.SetToolTip(this.btnAidatYenile, "Veritabanını yeniler");
@@ -459,7 +459,7 @@
             this.btnAidatPano.Location = new System.Drawing.Point(46, 521);
             this.btnAidatPano.Name = "btnAidatPano";
             this.btnAidatPano.Size = new System.Drawing.Size(102, 32);
-            this.btnAidatPano.TabIndex = 47;
+            this.btnAidatPano.TabIndex = 6;
             this.btnAidatPano.Text = "Panoya Geri dön!";
             this.btnAidatPano.UseVisualStyleBackColor = false;
             this.btnAidatPano.Click += new System.EventHandler(this.btnAidatPano_Click);
@@ -481,7 +481,7 @@
             this.btnAidatEposta.Location = new System.Drawing.Point(401, 521);
             this.btnAidatEposta.Name = "btnAidatEposta";
             this.btnAidatEposta.Size = new System.Drawing.Size(96, 32);
-            this.btnAidatEposta.TabIndex = 45;
+            this.btnAidatEposta.TabIndex = 5;
             this.btnAidatEposta.Text = "ePosta Gönder";
             this.btnAidatEposta.UseVisualStyleBackColor = false;
             // 
@@ -493,7 +493,7 @@
             this.btnAidatExcel.Location = new System.Drawing.Point(503, 521);
             this.btnAidatExcel.Name = "btnAidatExcel";
             this.btnAidatExcel.Size = new System.Drawing.Size(96, 32);
-            this.btnAidatExcel.TabIndex = 44;
+            this.btnAidatExcel.TabIndex = 4;
             this.btnAidatExcel.Text = "Excel\'e Çıkar";
             this.btnAidatExcel.UseVisualStyleBackColor = false;
             // 

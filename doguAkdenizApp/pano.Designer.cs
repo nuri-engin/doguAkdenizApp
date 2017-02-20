@@ -97,9 +97,10 @@
             this.btnPanoGelir.Location = new System.Drawing.Point(91, 520);
             this.btnPanoGelir.Name = "btnPanoGelir";
             this.btnPanoGelir.Size = new System.Drawing.Size(73, 35);
-            this.btnPanoGelir.TabIndex = 22;
+            this.btnPanoGelir.TabIndex = 6;
             this.btnPanoGelir.Text = "Gelir";
             this.btnPanoGelir.UseVisualStyleBackColor = false;
+            this.btnPanoGelir.Click += new System.EventHandler(this.btnPanoGelir_Click);
             // 
             // button7
             // 
@@ -109,9 +110,10 @@
             this.button7.Location = new System.Drawing.Point(91, 618);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(73, 35);
-            this.button7.TabIndex = 21;
+            this.button7.TabIndex = 8;
             this.button7.Text = "Rehber";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // btnPanoGider
             // 
@@ -121,9 +123,10 @@
             this.btnPanoGider.Location = new System.Drawing.Point(91, 553);
             this.btnPanoGider.Name = "btnPanoGider";
             this.btnPanoGider.Size = new System.Drawing.Size(73, 34);
-            this.btnPanoGider.TabIndex = 20;
+            this.btnPanoGider.TabIndex = 7;
             this.btnPanoGider.Text = "Gider";
             this.btnPanoGider.UseVisualStyleBackColor = false;
+            this.btnPanoGider.Click += new System.EventHandler(this.btnPanoGider_Click);
             // 
             // btnPanoProje
             // 
@@ -133,7 +136,7 @@
             this.btnPanoProje.Location = new System.Drawing.Point(91, 448);
             this.btnPanoProje.Name = "btnPanoProje";
             this.btnPanoProje.Size = new System.Drawing.Size(73, 35);
-            this.btnPanoProje.TabIndex = 19;
+            this.btnPanoProje.TabIndex = 5;
             this.btnPanoProje.Text = "Proje";
             this.btnPanoProje.UseVisualStyleBackColor = false;
             this.btnPanoProje.Click += new System.EventHandler(this.btnPanoProje_Click);
@@ -146,7 +149,7 @@
             this.btnPanoBagis.Location = new System.Drawing.Point(91, 386);
             this.btnPanoBagis.Name = "btnPanoBagis";
             this.btnPanoBagis.Size = new System.Drawing.Size(73, 35);
-            this.btnPanoBagis.TabIndex = 18;
+            this.btnPanoBagis.TabIndex = 4;
             this.btnPanoBagis.Text = "Bagış";
             this.btnPanoBagis.UseVisualStyleBackColor = false;
             this.btnPanoBagis.Click += new System.EventHandler(this.btnPanoBagis_Click);
@@ -159,7 +162,7 @@
             this.btnPanoAidat.Location = new System.Drawing.Point(91, 354);
             this.btnPanoAidat.Name = "btnPanoAidat";
             this.btnPanoAidat.Size = new System.Drawing.Size(73, 35);
-            this.btnPanoAidat.TabIndex = 17;
+            this.btnPanoAidat.TabIndex = 3;
             this.btnPanoAidat.Text = "Aidat";
             this.btnPanoAidat.UseVisualStyleBackColor = false;
             this.btnPanoAidat.Click += new System.EventHandler(this.btnPanoAidat_Click);
@@ -172,7 +175,7 @@
             this.btnPanoUye.Location = new System.Drawing.Point(91, 280);
             this.btnPanoUye.Name = "btnPanoUye";
             this.btnPanoUye.Size = new System.Drawing.Size(73, 35);
-            this.btnPanoUye.TabIndex = 16;
+            this.btnPanoUye.TabIndex = 2;
             this.btnPanoUye.Text = "Üye";
             this.btnPanoUye.UseVisualStyleBackColor = false;
             this.btnPanoUye.Click += new System.EventHandler(this.btnPanoUye_Click);
@@ -185,7 +188,7 @@
             this.btnPanoEkip.Location = new System.Drawing.Point(91, 207);
             this.btnPanoEkip.Name = "btnPanoEkip";
             this.btnPanoEkip.Size = new System.Drawing.Size(73, 35);
-            this.btnPanoEkip.TabIndex = 15;
+            this.btnPanoEkip.TabIndex = 1;
             this.btnPanoEkip.Text = "Ekip";
             this.btnPanoEkip.UseVisualStyleBackColor = false;
             this.btnPanoEkip.Click += new System.EventHandler(this.btnPanoEkip_Click);
@@ -266,7 +269,7 @@
             this.groupBox2.Location = new System.Drawing.Point(0, 690);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(956, 44);
-            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Alt Bilgi";
             // 
@@ -278,7 +281,7 @@
             this.lblPanoKullanici.Location = new System.Drawing.Point(8, 16);
             this.lblPanoKullanici.Name = "lblPanoKullanici";
             this.lblPanoKullanici.Size = new System.Drawing.Size(64, 22);
-            this.lblPanoKullanici.TabIndex = 25;
+            this.lblPanoKullanici.TabIndex = 0;
             this.lblPanoKullanici.Text = "Kullanıcı:";
             // 
             // lblPanoLogInfo
@@ -289,7 +292,7 @@
             this.lblPanoLogInfo.Location = new System.Drawing.Point(78, 16);
             this.lblPanoLogInfo.Name = "lblPanoLogInfo";
             this.lblPanoLogInfo.Size = new System.Drawing.Size(79, 22);
-            this.lblPanoLogInfo.TabIndex = 24;
+            this.lblPanoLogInfo.TabIndex = 1;
             this.lblPanoLogInfo.Text = "{ loginInfo }";
             // 
             // lblPanoTime
@@ -300,7 +303,7 @@
             this.lblPanoTime.Location = new System.Drawing.Point(815, 16);
             this.lblPanoTime.Name = "lblPanoTime";
             this.lblPanoTime.Size = new System.Drawing.Size(73, 22);
-            this.lblPanoTime.TabIndex = 23;
+            this.lblPanoTime.TabIndex = 2;
             this.lblPanoTime.Text = "{tarihSaat}";
             // 
             // groupBox3
@@ -310,7 +313,7 @@
             this.groupBox3.Location = new System.Drawing.Point(253, 342);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(650, 152);
-            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "to Do";
             // 
@@ -321,7 +324,7 @@
             this.groupBox4.Location = new System.Drawing.Point(253, 500);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(315, 184);
-            this.groupBox4.TabIndex = 3;
+            this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Üye Data";
             // 
@@ -332,7 +335,7 @@
             this.groupBox5.Location = new System.Drawing.Point(590, 500);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(313, 184);
-            this.groupBox5.TabIndex = 4;
+            this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Proje Data";
             // 
@@ -364,7 +367,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "pano";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pano : Doğu Akdeniz Araştırma Derneği";
+            this.Text = "Pano : Doğu Akdeniz Araştırma Derneğ i";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.pano_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

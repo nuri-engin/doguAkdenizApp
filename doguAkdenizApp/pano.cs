@@ -79,5 +79,26 @@ namespace doguAkdenizApp
             proje projeEkrani = new proje(lblPanoLogInfo.Text);
             projeEkrani.ShowDialog();
         }
+
+        private void btnPanoGelir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            gelir gelirEkrani = new gelir(lblPanoLogInfo.Text);
+            gelirEkrani.ShowDialog();
+        }
+
+        private void btnPanoGider_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            gider giderEkrani = new gider(lblPanoLogInfo.Text);
+            giderEkrani.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            rehber rehberEkrani = new rehber(lblPanoLogInfo.Text);
+            rehberEkrani.ShowDialog();
+        }
     }
 }

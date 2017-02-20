@@ -114,7 +114,7 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(672, 105);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Üye Kaydı Olustur";
             // 
@@ -128,7 +128,7 @@
             this.btnUyeGuncelle.Location = new System.Drawing.Point(153, 57);
             this.btnUyeGuncelle.Name = "btnUyeGuncelle";
             this.btnUyeGuncelle.Size = new System.Drawing.Size(86, 32);
-            this.btnUyeGuncelle.TabIndex = 12;
+            this.btnUyeGuncelle.TabIndex = 4;
             this.btnUyeGuncelle.Text = "Düzenle";
             this.btnUyeGuncelle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipUyeDuzenle.SetToolTip(this.btnUyeGuncelle, "Seçili kaydı veritabanında gunceller");
@@ -140,7 +140,7 @@
             this.txtUyeAra.Location = new System.Drawing.Point(471, 24);
             this.txtUyeAra.Name = "txtUyeAra";
             this.txtUyeAra.Size = new System.Drawing.Size(195, 20);
-            this.txtUyeAra.TabIndex = 14;
+            this.txtUyeAra.TabIndex = 6;
             // 
             // pictureBox1
             // 
@@ -161,7 +161,7 @@
             this.btnUyeAra.Location = new System.Drawing.Point(586, 54);
             this.btnUyeAra.Name = "btnUyeAra";
             this.btnUyeAra.Size = new System.Drawing.Size(80, 32);
-            this.btnUyeAra.TabIndex = 15;
+            this.btnUyeAra.TabIndex = 0;
             this.btnUyeAra.Text = "Ara";
             this.btnUyeAra.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipUyeAra.SetToolTip(this.btnUyeAra, "Veritabanında arama yapar");
@@ -179,7 +179,7 @@
             this.btnUyeYeni.Location = new System.Drawing.Point(85, 19);
             this.btnUyeYeni.Name = "btnUyeYeni";
             this.btnUyeYeni.Size = new System.Drawing.Size(62, 32);
-            this.btnUyeYeni.TabIndex = 8;
+            this.btnUyeYeni.TabIndex = 1;
             this.btnUyeYeni.Text = "Yeni";
             this.btnUyeYeni.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipUyeYeni.SetToolTip(this.btnUyeYeni, "Yeni bir form açar");
@@ -196,7 +196,7 @@
             this.btnUyeKaydet.Location = new System.Drawing.Point(245, 57);
             this.btnUyeKaydet.Name = "btnUyeKaydet";
             this.btnUyeKaydet.Size = new System.Drawing.Size(85, 32);
-            this.btnUyeKaydet.TabIndex = 13;
+            this.btnUyeKaydet.TabIndex = 5;
             this.btnUyeKaydet.Text = "Kaydet";
             this.btnUyeKaydet.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipUyeKaydet.SetToolTip(this.btnUyeKaydet, "Formda yer alan bilgileri veritabanına kaydeder");
@@ -213,7 +213,7 @@
             this.btnUyeSil.Location = new System.Drawing.Point(85, 57);
             this.btnUyeSil.Name = "btnUyeSil";
             this.btnUyeSil.Size = new System.Drawing.Size(62, 32);
-            this.btnUyeSil.TabIndex = 11;
+            this.btnUyeSil.TabIndex = 3;
             this.btnUyeSil.Text = "Sil";
             this.btnUyeSil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipUyeSil.SetToolTip(this.btnUyeSil, "Seçili kaydı veritabanından siler");
@@ -230,7 +230,7 @@
             this.btnUyeTemizle.Location = new System.Drawing.Point(153, 20);
             this.btnUyeTemizle.Name = "btnUyeTemizle";
             this.btnUyeTemizle.Size = new System.Drawing.Size(86, 32);
-            this.btnUyeTemizle.TabIndex = 9;
+            this.btnUyeTemizle.TabIndex = 2;
             this.btnUyeTemizle.Text = "Temizle";
             this.btnUyeTemizle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipUyeTemizle.SetToolTip(this.btnUyeTemizle, "Formu temizler");
@@ -249,7 +249,7 @@
             this.groupBox3.Location = new System.Drawing.Point(12, 123);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(672, 54);
-            this.groupBox3.TabIndex = 40;
+            this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Kayıt Bilgileri";
             // 
@@ -262,7 +262,7 @@
             this.lblUyeKullanici.Location = new System.Drawing.Point(5, 19);
             this.lblUyeKullanici.Name = "lblUyeKullanici";
             this.lblUyeKullanici.Size = new System.Drawing.Size(64, 22);
-            this.lblUyeKullanici.TabIndex = 38;
+            this.lblUyeKullanici.TabIndex = 1;
             this.lblUyeKullanici.Text = "Kullanıcı:";
             this.lblUyeKullanici.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -275,7 +275,7 @@
             this.lblUyeKayitNo.Location = new System.Drawing.Point(157, 19);
             this.lblUyeKayitNo.Name = "lblUyeKayitNo";
             this.lblUyeKayitNo.Size = new System.Drawing.Size(62, 22);
-            this.lblUyeKayitNo.TabIndex = 37;
+            this.lblUyeKayitNo.TabIndex = 3;
             this.lblUyeKayitNo.Text = "Kayıt No:";
             // 
             // lblUyeID
@@ -287,7 +287,7 @@
             this.lblUyeID.Location = new System.Drawing.Point(225, 19);
             this.lblUyeID.Name = "lblUyeID";
             this.lblUyeID.Size = new System.Drawing.Size(73, 22);
-            this.lblUyeID.TabIndex = 36;
+            this.lblUyeID.TabIndex = 4;
             this.lblUyeID.Text = "{ KayitNo }";
             // 
             // lblUyeKayitTarihi
@@ -299,7 +299,7 @@
             this.lblUyeKayitTarihi.Location = new System.Drawing.Point(371, 19);
             this.lblUyeKayitTarihi.Name = "lblUyeKayitTarihi";
             this.lblUyeKayitTarihi.Size = new System.Drawing.Size(80, 22);
-            this.lblUyeKayitTarihi.TabIndex = 30;
+            this.lblUyeKayitTarihi.TabIndex = 5;
             this.lblUyeKayitTarihi.Text = "Kayıt Tarihi:";
             // 
             // dtpUyeKayitTarihi
@@ -311,7 +311,7 @@
             this.dtpUyeKayitTarihi.MinDate = new System.DateTime(2015, 12, 1, 0, 0, 0, 0);
             this.dtpUyeKayitTarihi.Name = "dtpUyeKayitTarihi";
             this.dtpUyeKayitTarihi.Size = new System.Drawing.Size(201, 21);
-            this.dtpUyeKayitTarihi.TabIndex = 31;
+            this.dtpUyeKayitTarihi.TabIndex = 0;
             // 
             // lblUyeLoginfo
             // 
@@ -322,7 +322,7 @@
             this.lblUyeLoginfo.Location = new System.Drawing.Point(75, 19);
             this.lblUyeLoginfo.Name = "lblUyeLoginfo";
             this.lblUyeLoginfo.Size = new System.Drawing.Size(68, 22);
-            this.lblUyeLoginfo.TabIndex = 34;
+            this.lblUyeLoginfo.TabIndex = 2;
             this.lblUyeLoginfo.Text = "{ logInfo }";
             this.lblUyeLoginfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -357,7 +357,7 @@
             this.groupBox2.Location = new System.Drawing.Point(12, 183);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(672, 182);
-            this.groupBox2.TabIndex = 41;
+            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Kişi Bilgileri";
             // 
@@ -375,7 +375,7 @@
             this.cbUyeGirisUcreti.Location = new System.Drawing.Point(465, 149);
             this.cbUyeGirisUcreti.Name = "cbUyeGirisUcreti";
             this.cbUyeGirisUcreti.Size = new System.Drawing.Size(201, 20);
-            this.cbUyeGirisUcreti.TabIndex = 41;
+            this.cbUyeGirisUcreti.TabIndex = 12;
             this.cbUyeGirisUcreti.Text = "Lütfen listeden Ücret seçimi yapınız.";
             // 
             // lblUyeGirisUcreti
@@ -387,7 +387,7 @@
             this.lblUyeGirisUcreti.Location = new System.Drawing.Point(371, 149);
             this.lblUyeGirisUcreti.Name = "lblUyeGirisUcreti";
             this.lblUyeGirisUcreti.Size = new System.Drawing.Size(77, 22);
-            this.lblUyeGirisUcreti.TabIndex = 39;
+            this.lblUyeGirisUcreti.TabIndex = 24;
             this.lblUyeGirisUcreti.Text = "Giriş Ücreti:";
             // 
             // cbUyeKurulKarari
@@ -403,7 +403,7 @@
             this.cbUyeKurulKarari.Location = new System.Drawing.Point(97, 148);
             this.cbUyeKurulKarari.Name = "cbUyeKurulKarari";
             this.cbUyeKurulKarari.Size = new System.Drawing.Size(201, 20);
-            this.cbUyeKurulKarari.TabIndex = 40;
+            this.cbUyeKurulKarari.TabIndex = 11;
             this.cbUyeKurulKarari.Text = "Lütfen listeden Karar seçimi yapınız.";
             // 
             // lblUyeKurulKarari
@@ -415,7 +415,7 @@
             this.lblUyeKurulKarari.Location = new System.Drawing.Point(5, 148);
             this.lblUyeKurulKarari.Name = "lblUyeKurulKarari";
             this.lblUyeKurulKarari.Size = new System.Drawing.Size(84, 22);
-            this.lblUyeKurulKarari.TabIndex = 39;
+            this.lblUyeKurulKarari.TabIndex = 18;
             this.lblUyeKurulKarari.Text = "Kurul Kararı:";
             // 
             // radUyeErkek
@@ -424,7 +424,7 @@
             this.radUyeErkek.Location = new System.Drawing.Point(168, 73);
             this.radUyeErkek.Name = "radUyeErkek";
             this.radUyeErkek.Size = new System.Drawing.Size(53, 17);
-            this.radUyeErkek.TabIndex = 38;
+            this.radUyeErkek.TabIndex = 5;
             this.radUyeErkek.TabStop = true;
             this.radUyeErkek.Text = "Erkek";
             this.radUyeErkek.UseVisualStyleBackColor = true;
@@ -436,7 +436,7 @@
             this.radUyeKadin.Location = new System.Drawing.Point(97, 73);
             this.radUyeKadin.Name = "radUyeKadin";
             this.radUyeKadin.Size = new System.Drawing.Size(52, 17);
-            this.radUyeKadin.TabIndex = 37;
+            this.radUyeKadin.TabIndex = 4;
             this.radUyeKadin.TabStop = true;
             this.radUyeKadin.Text = "Kadın";
             this.radUyeKadin.UseVisualStyleBackColor = true;
@@ -451,7 +451,7 @@
             this.lblUyeCinsiyet.Location = new System.Drawing.Point(5, 73);
             this.lblUyeCinsiyet.Name = "lblUyeCinsiyet";
             this.lblUyeCinsiyet.Size = new System.Drawing.Size(60, 22);
-            this.lblUyeCinsiyet.TabIndex = 36;
+            this.lblUyeCinsiyet.TabIndex = 15;
             this.lblUyeCinsiyet.Text = "Cinsiyet:";
             // 
             // txtUyeBabaAdi
@@ -459,7 +459,7 @@
             this.txtUyeBabaAdi.Location = new System.Drawing.Point(465, 71);
             this.txtUyeBabaAdi.Name = "txtUyeBabaAdi";
             this.txtUyeBabaAdi.Size = new System.Drawing.Size(201, 20);
-            this.txtUyeBabaAdi.TabIndex = 35;
+            this.txtUyeBabaAdi.TabIndex = 6;
             // 
             // lblUyeBabaAdi
             // 
@@ -470,7 +470,7 @@
             this.lblUyeBabaAdi.Location = new System.Drawing.Point(371, 71);
             this.lblUyeBabaAdi.Name = "lblUyeBabaAdi";
             this.lblUyeBabaAdi.Size = new System.Drawing.Size(64, 22);
-            this.lblUyeBabaAdi.TabIndex = 34;
+            this.lblUyeBabaAdi.TabIndex = 21;
             this.lblUyeBabaAdi.Text = "Baba Adı:";
             // 
             // lblUyeIsim
@@ -482,7 +482,7 @@
             this.lblUyeIsim.Location = new System.Drawing.Point(5, 21);
             this.lblUyeIsim.Name = "lblUyeIsim";
             this.lblUyeIsim.Size = new System.Drawing.Size(40, 22);
-            this.lblUyeIsim.TabIndex = 2;
+            this.lblUyeIsim.TabIndex = 13;
             this.lblUyeIsim.Text = "İsim: ";
             // 
             // cbUyeSehir
@@ -576,7 +576,7 @@
             this.cbUyeSehir.Location = new System.Drawing.Point(97, 122);
             this.cbUyeSehir.Name = "cbUyeSehir";
             this.cbUyeSehir.Size = new System.Drawing.Size(201, 20);
-            this.cbUyeSehir.TabIndex = 33;
+            this.cbUyeSehir.TabIndex = 9;
             this.cbUyeSehir.Text = "Lütfen listeden şehir seçimi yapınız.";
             // 
             // lblUyeAdres
@@ -588,7 +588,7 @@
             this.lblUyeAdres.Location = new System.Drawing.Point(371, 123);
             this.lblUyeAdres.Name = "lblUyeAdres";
             this.lblUyeAdres.Size = new System.Drawing.Size(50, 22);
-            this.lblUyeAdres.TabIndex = 8;
+            this.lblUyeAdres.TabIndex = 23;
             this.lblUyeAdres.Text = "Adres: ";
             // 
             // lblUyeSehir
@@ -600,7 +600,7 @@
             this.lblUyeSehir.Location = new System.Drawing.Point(5, 122);
             this.lblUyeSehir.Name = "lblUyeSehir";
             this.lblUyeSehir.Size = new System.Drawing.Size(46, 22);
-            this.lblUyeSehir.TabIndex = 9;
+            this.lblUyeSehir.TabIndex = 17;
             this.lblUyeSehir.Text = "Şehir: ";
             // 
             // lblUyeEposta
@@ -612,7 +612,7 @@
             this.lblUyeEposta.Location = new System.Drawing.Point(371, 97);
             this.lblUyeEposta.Name = "lblUyeEposta";
             this.lblUyeEposta.Size = new System.Drawing.Size(55, 22);
-            this.lblUyeEposta.TabIndex = 7;
+            this.lblUyeEposta.TabIndex = 22;
             this.lblUyeEposta.Text = "ePosta: ";
             // 
             // txtUyeEposta
@@ -620,7 +620,7 @@
             this.txtUyeEposta.Location = new System.Drawing.Point(465, 97);
             this.txtUyeEposta.Name = "txtUyeEposta";
             this.txtUyeEposta.Size = new System.Drawing.Size(201, 20);
-            this.txtUyeEposta.TabIndex = 5;
+            this.txtUyeEposta.TabIndex = 8;
             this.txtUyeEposta.Leave += new System.EventHandler(this.txtUyeEposta_Leave);
             // 
             // txtUyeAdres
@@ -628,7 +628,7 @@
             this.txtUyeAdres.Location = new System.Drawing.Point(465, 123);
             this.txtUyeAdres.Name = "txtUyeAdres";
             this.txtUyeAdres.Size = new System.Drawing.Size(201, 20);
-            this.txtUyeAdres.TabIndex = 7;
+            this.txtUyeAdres.TabIndex = 10;
             // 
             // lblUyeSoyisim
             // 
@@ -639,7 +639,7 @@
             this.lblUyeSoyisim.Location = new System.Drawing.Point(371, 19);
             this.lblUyeSoyisim.Name = "lblUyeSoyisim";
             this.lblUyeSoyisim.Size = new System.Drawing.Size(61, 22);
-            this.lblUyeSoyisim.TabIndex = 3;
+            this.lblUyeSoyisim.TabIndex = 19;
             this.lblUyeSoyisim.Text = "Soyisim: ";
             // 
             // lblUyeDogum
@@ -651,7 +651,7 @@
             this.lblUyeDogum.Location = new System.Drawing.Point(371, 44);
             this.lblUyeDogum.Name = "lblUyeDogum";
             this.lblUyeDogum.Size = new System.Drawing.Size(92, 22);
-            this.lblUyeDogum.TabIndex = 4;
+            this.lblUyeDogum.TabIndex = 20;
             this.lblUyeDogum.Text = "Dogum Tarihi: ";
             // 
             // lblUyeTc
@@ -663,7 +663,7 @@
             this.lblUyeTc.Location = new System.Drawing.Point(5, 47);
             this.lblUyeTc.Name = "lblUyeTc";
             this.lblUyeTc.Size = new System.Drawing.Size(48, 22);
-            this.lblUyeTc.TabIndex = 5;
+            this.lblUyeTc.TabIndex = 14;
             this.lblUyeTc.Text = "TC No: ";
             // 
             // lblUyeTelefon
@@ -675,7 +675,7 @@
             this.lblUyeTelefon.Location = new System.Drawing.Point(5, 96);
             this.lblUyeTelefon.Name = "lblUyeTelefon";
             this.lblUyeTelefon.Size = new System.Drawing.Size(59, 22);
-            this.lblUyeTelefon.TabIndex = 6;
+            this.lblUyeTelefon.TabIndex = 16;
             this.lblUyeTelefon.Text = "Telefon: ";
             // 
             // dtpUyeDogum
@@ -687,7 +687,7 @@
             this.dtpUyeDogum.MinDate = new System.DateTime(1910, 1, 1, 0, 0, 0, 0);
             this.dtpUyeDogum.Name = "dtpUyeDogum";
             this.dtpUyeDogum.Size = new System.Drawing.Size(201, 20);
-            this.dtpUyeDogum.TabIndex = 32;
+            this.dtpUyeDogum.TabIndex = 3;
             this.dtpUyeDogum.Value = new System.DateTime(1999, 12, 31, 0, 0, 0, 0);
             // 
             // txtUyeIsim
@@ -710,7 +710,7 @@
             this.txtUyeTelefon.Location = new System.Drawing.Point(97, 96);
             this.txtUyeTelefon.Name = "txtUyeTelefon";
             this.txtUyeTelefon.Size = new System.Drawing.Size(201, 20);
-            this.txtUyeTelefon.TabIndex = 4;
+            this.txtUyeTelefon.TabIndex = 7;
             // 
             // txtUyeSoyisim
             // 
@@ -728,7 +728,7 @@
             this.dgvUye.Name = "dgvUye";
             this.dgvUye.ReadOnly = true;
             this.dgvUye.Size = new System.Drawing.Size(672, 260);
-            this.dgvUye.TabIndex = 42;
+            this.dgvUye.TabIndex = 7;
             this.dgvUye.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUye_CellContentClick);
             // 
             // picUyeDrive
@@ -752,7 +752,7 @@
             this.btnUyeYenile.Location = new System.Drawing.Point(605, 637);
             this.btnUyeYenile.Name = "btnUyeYenile";
             this.btnUyeYenile.Size = new System.Drawing.Size(79, 32);
-            this.btnUyeYenile.TabIndex = 43;
+            this.btnUyeYenile.TabIndex = 3;
             this.btnUyeYenile.Text = "Yenile";
             this.btnUyeYenile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.tipUyeYenile.SetToolTip(this.btnUyeYenile, "Veritabanını yeniler");
@@ -767,7 +767,7 @@
             this.btnUyePano.Location = new System.Drawing.Point(53, 637);
             this.btnUyePano.Name = "btnUyePano";
             this.btnUyePano.Size = new System.Drawing.Size(102, 32);
-            this.btnUyePano.TabIndex = 47;
+            this.btnUyePano.TabIndex = 6;
             this.btnUyePano.Text = "Panoya Geri dön!";
             this.btnUyePano.UseVisualStyleBackColor = false;
             this.btnUyePano.Click += new System.EventHandler(this.btnUyePano_Click);
@@ -789,7 +789,7 @@
             this.btnUyeEposta.Location = new System.Drawing.Point(401, 637);
             this.btnUyeEposta.Name = "btnUyeEposta";
             this.btnUyeEposta.Size = new System.Drawing.Size(96, 32);
-            this.btnUyeEposta.TabIndex = 45;
+            this.btnUyeEposta.TabIndex = 5;
             this.btnUyeEposta.Text = "ePosta Gönder";
             this.btnUyeEposta.UseVisualStyleBackColor = false;
             // 
@@ -801,7 +801,7 @@
             this.btnUyeExcel.Location = new System.Drawing.Point(503, 637);
             this.btnUyeExcel.Name = "btnUyeExcel";
             this.btnUyeExcel.Size = new System.Drawing.Size(96, 32);
-            this.btnUyeExcel.TabIndex = 44;
+            this.btnUyeExcel.TabIndex = 4;
             this.btnUyeExcel.Text = "Excel\'e Çıkar";
             this.btnUyeExcel.UseVisualStyleBackColor = false;
             // 
