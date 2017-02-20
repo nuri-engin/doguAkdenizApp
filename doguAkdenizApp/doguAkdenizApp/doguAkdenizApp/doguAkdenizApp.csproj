@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9701EBF6-8431-44FD-9189-B28AE6455758}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>doguAkdenizApp</RootNamespace>
+    <AssemblyName>doguAkdenizApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelLibrary">
+      <HintPath>C:\Users\nuridesengin\Google Drive\DoğuAkdeniz\doguAkdeniz App\resources\ExcelLibrary_20110730\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aidat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aidat.Designer.cs">
+      <DependentUpon>aidat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bagis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bagis.Designer.cs">
+      <DependentUpon>bagis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="browser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="browser.Designer.cs">
+      <DependentUpon>browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ekip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ekip.Designer.cs">
+      <DependentUpon>ekip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gelir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gelir.Designer.cs">
+      <DependentUpon>gelir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gider.Designer.cs">
+      <DependentUpon>gider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pano.Designer.cs">
+      <DependentUpon>pano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="proje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="proje.Designer.cs">
+      <DependentUpon>proje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="rehber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rehber.Designer.cs">
+      <DependentUpon>rehber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uye.Designer.cs">
+      <DependentUpon>uye.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="aidat.resx">
+      <DependentUpon>aidat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bagis.resx">
+      <DependentUpon>bagis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="browser.resx">
+      <DependentUpon>browser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ekip.resx">
+      <DependentUpon>ekip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gelir.resx">
+      <DependentUpon>gelir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gider.resx">
+      <DependentUpon>gider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pano.resx">
+      <DependentUpon>pano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="proje.resx">
+      <DependentUpon>proje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rehber.resx">
+      <DependentUpon>rehber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uye.resx">
+      <DependentUpon>uye.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panoBanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floppy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glass-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enter-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radial_arrows-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radial_arrows-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google_Drive-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google_Drive-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exchange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
